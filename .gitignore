@@ -1,0 +1,16 @@
+composer.phar
+.DS_Store
+
+.env.local.php
+.env.php
+bootstrap/compiled.php
+vendor
+
+*.sublime-project
+*.sublime-workspace
+config.codekit
+
+app/config/packages/barryvdh/*
+app/storage/debugbar/
+public/packages/barryvdh/*
+public/packages/maximebf/*

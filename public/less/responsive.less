@@ -1,0 +1,158 @@
+@import "base-variables.less";
+@import "mixins.less";
+@import "bs3-mixins.less";
+
+/* Styles common to xs, sm, and md */
+@media (max-width: 1199px) {
+	header {
+		.brand {
+			font-size: 28px;
+		}
+	}
+}
+
+/* Styles common xs and sm */
+@media (max-width: 991px) {
+	
+}
+ 
+/* Styles for sm */
+@media (min-width: 768px) and (max-width: 991px) {
+	nav.nav-main {
+		height: 50px;
+		line-height: 50px;
+
+		ul {
+			li {
+				a {
+					text-align: center;
+					font-size: @font-size;
+				}
+			}
+		}
+	}
+
+	header {
+		.brand {
+			font-size: 24px;
+		}
+	}
+}
+ 
+/* Styles for xs */
+@media (max-width: 767px) {
+	nav.nav-global {
+		ul {
+			li {
+				width: 100%;
+
+				text-align: center;
+
+				a {
+					&.active {
+						background: none;
+					}
+
+					.arrow {
+						border-left: 1px solid rgba(0, 0, 0, .2);
+						border-top: 1px solid rgba(0, 0, 0, .2);
+						background: @color-nav-main;
+					}
+				}
+			}
+		}
+	}
+
+	#navGlobalMobile {
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0 0 @spacing 0;
+				padding: 0;
+
+				text-align: center;
+				list-style: none;
+
+				a {
+					font-family: @font-special;
+					font-size: @font-size-lg;
+					font-style: italic;
+				}
+			}
+		}
+	}
+
+	header {
+		.brand {
+			display: block;
+
+			font-size: 26px;
+			text-align: center;
+		}
+
+		nav.nav-main {
+			width: 100%;
+			margin-top: @spacing + 9px;
+			margin-bottom: @spacing;
+
+			background: @color-gray-light;
+			border: 1px solid rgba(0, 0, 0, .1);
+
+			.rounded(@border-radius);
+
+			ul {
+				li {
+					display: block;
+					margin: 0;
+					float: none;
+
+					text-align: center;
+
+					a {
+						line-height: 2.5;
+
+						color: @color-gray-dark;
+
+						&:hover {
+							color: @color-dark;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section {
+		h1 {
+			text-align: center;
+		}
+
+		.news-title {
+			text-align: center;
+
+			small {
+				display: block;
+				line-height: @line-height;
+			}
+		}
+	}
+
+	footer {
+		height: auto;
+
+		h2 {
+			text-align: center;
+		}
+
+		ul.list-unstyled {
+			li {
+				margin: 5px 0;
+
+				text-align: center;
+				font-size: @font-size;
+			}
+		}
+	}
+}

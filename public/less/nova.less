@@ -1,0 +1,106 @@
+@import "base-variables.less";
+@import "nova-variables.less";
+@import "mixins.less";
+@import "bs3-mixins.less";
+
+@media (max-width: 767px) {
+	header {
+		nav.nav-main {
+			ul {
+				li {
+					width: 33.3333333% !important;
+				}
+			}
+		}
+	}
+}
+
+header {
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+	background: @color-primary;
+
+	.brand {
+		small {
+			font-size: 24px;
+			font-weight: 300;
+			text-transform: lowercase;
+			font-variant: small-caps;
+		}
+	}
+}
+
+section {
+	a  {
+		color: @color-primary;
+
+		&:hover {
+			color: @color-primary-light;
+		}
+
+		&:active {
+			color: @color-primary;
+		}
+	}
+
+	h1 {
+		color: @color-primary;
+	}
+
+	h2 {
+		color: @color-primary-light;
+	}
+}
+
+footer {
+	a {
+		&:hover {
+			color: @color-primary-bright;
+			border-color: @color-primary-bright;
+		}
+	}
+}
+
+.btn {
+	&.btn-primary {
+		.btn-pseudo-states(@color-white, @color-primary, @color-primary);
+	}
+
+	&.btn-link {
+		color: @color-primary;
+	}
+}
+
+.label {
+	&.label-primary {
+		background-color: @color-primary-bright;
+	}
+}
+
+.nav-tabs {
+	> li > a {
+		color: @color-primary;
+	}
+}
+
+.nav-pills {
+	> li > a {
+		color: @color-primary;
+	}
+
+	> li.active > a,
+	> li.active > a:hover,
+	> li.active > a:focus {
+		background-color: @color-primary-light;
+	}
+}
+
+code {
+	color: @color-primary-light;
+}
+
+blockquote {
+	&.author {
+		border-color: @color-primary;
+		color: @color-primary;
+	}
+}
