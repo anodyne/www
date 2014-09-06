@@ -107,7 +107,7 @@ return array(
 	|
 	*/
 
-	'path' => '../',
+	'path' => '/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ return array(
 	|
 	*/
 
-	'domain' => 'anodyne-productions.net',
+	'domain' => '.anodyne-productions.net',
 
 	'expire_on_close' => false,
 
