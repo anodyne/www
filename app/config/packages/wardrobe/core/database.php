@@ -14,7 +14,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => $_ENV['DB_USERS_HOST'],
-			'database'  => 'anodyne_news',
+			'database'  => $_ENV['DB_NEWS_NAME'],
 			'username'  => $_ENV['DB_USERS_USERNAME'],
 			'password'  => $_ENV['DB_USERS_PASSWORD'],
 			'charset'   => 'utf8',
