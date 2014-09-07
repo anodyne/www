@@ -16,7 +16,7 @@
 	<a name="products"></a><h1>Our Products</h1>
 
 	<div class="row">
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<div class="well">
 				<h2 class="text-center">Nova <small><?php echo $version;?></small></h2>
 				
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-6">
+		<div class="col-md-4">
 			<div class="well">
 				<h2 class="text-center">AnodyneXtras</h2>
 				
@@ -35,10 +35,20 @@
 				<p><a href="http://xtras.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Explore Xtras</a></p>
 			</div>
 		</div>
+
+		<div class="col-md-4">
+			<div class="well">
+				<h2 class="text-center">Forums</h2>
+
+				<p>Everything from how to do something Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
+		
+				<p><a href="http://forums.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
+			</div>
+		</div>
 	</div>
 
-	<div class="row">
-		<!--<div class="col-xs-12">
+	<!--<div class="row">
+		<div class="col-xs-12">
 			<div class="well">
 				<h2 class="text-center">Anodyne Help Resources</h2>
 				
@@ -56,28 +66,8 @@
 					</div>
 				</div>
 			</div>
-		</div>-->
-		
-		<div class="col-xs-12">
-			<div class="well">
-				<h2 class="text-center">Anodyne Help Resources</h2>
-				
-				<div class="row">
-					<div class="col-md-6">
-						<p>We have a large community who can be a wealth of information. Everything from how to do something Nova to skin requests and much more can be handled through our forums. (Registration required)</p>
-				
-						<p><a href="http://forums.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Forums</a></p>
-					</div>
-					
-					<div class="col-md-6">
-						<p>If you're having an issue with one of our products, this is the first place to look. We've compiled frequently asked questions as well as common issues in a simple site so you can get back to your game!</p>
-				
-						<p><a href="http://docs.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">AnodyneDocs</a></p>
-					</div>
-				</div>
-			</div>
 		</div>
-	</div>
+	</div>-->
 
 	<hr>
 
@@ -113,8 +103,8 @@
 		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>
 		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
 		
-		<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>
+		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
+		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
 		
 		<dt><a href="#" class="js-contact">Email</a></dt>
 		<dd>We're happy to answer questions over email, but the best place to get help is on the forums. Not only is it quicker for us to help you that way, but it also benefits other members of the community that may be having similar issues or someone who may come along several months from now with the same issue.</dd>
