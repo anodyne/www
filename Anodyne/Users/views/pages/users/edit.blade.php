@@ -13,6 +13,8 @@
 		</div>
 	</div>
 
+	{{ alert('info', "Avatars for your account are handled through <a href='https://secure.gravatar.com/' target='_blank'>Gravatar</a>. If you would like to have a personalized avatar used throughout Anodyne's sites, you should setup your Gravatar at their site.") }}
+
 	{{ Form::model($user, ['route' => ['admin.users.update', $user->username], 'method' => 'put']) }}
 		<div class="row">
 			<div class="col-md-4">
