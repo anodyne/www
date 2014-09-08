@@ -1,7 +1,11 @@
 <nav class="nav-global visible-xs">
 	<div class="container">
 		<ul>
-			<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Anodyne<div class="arrow"></div></a></li>
+			@if ($active == 'nova')
+				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Nova<div class="arrow"></div></a></li>
+			@else
+				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Anodyne<div class="arrow"></div></a></li>
+			@endif
 		</ul>
 	</div>
 </nav>
