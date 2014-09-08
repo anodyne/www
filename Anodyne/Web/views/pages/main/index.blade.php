@@ -7,11 +7,11 @@
 @section('content')
 	<a name="about"></a><h1>About Us</h1>
 
-	<p>Founded in {{ $founding->year }}, Anodyne Productions became the definition of the the idiom "necessity is the mother of invention." Born out of a need for an easy-to-use and powerful tool to manage online RPGs, Anodyne Productions opened its doors with the SIMM Management System (SMS), a tool to help game masters spend less time managing the game and more time playing it. Over the last {{ $founding->diffInYears(Date::now()) }} years, Anodyne has delivered premier RPG management tools, first for Star Trek RPGs with SMS, and now with Nova for RPGs of all kinds.</p>
+	<p>Founded in {{ $founding->year }}, Anodyne Productions was the definition of the the idiom "necessity is the mother of invention." Born out of a need for an easy-to-use and powerful tool to manage online RPGs, Anodyne Productions opened its doors with the SIMM Management System (SMS), a tool to help game masters spend less time managing the game and more time playing it. Over the last {{ $founding->diffInYears(Date::now()) }} years, Anodyne has delivered premier RPG management tools, first for Star Trek RPGs with SMS, and now for RPGs of all kinds with <a href="{{ route('nova.home') }}">Nova</a>.</p>
 
 	<p>Our mission is simple: provide products of the highest quality. That's been the driving force behind our efforts since the day we opened our doors; we don't just want to meet your expectations for powerful and easy-to-use web software, we want to exceed it.</p>
 
-	<hr>
+	<hr class="partial-split">
 
 	<a name="products"></a><h1>Our Products</h1>
 
@@ -40,7 +40,7 @@
 			<div class="well">
 				<h2 class="text-center">Forums</h2>
 
-				<p>Everything from how to do something Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
+				<p>Everything from how to do something in Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
 		
 				<p><a href="http://forums.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
 			</div>
@@ -69,7 +69,7 @@
 		</div>
 	</div>-->
 
-	<hr>
+	<hr class="partial-split">
 
 	<a name="news"></a><h1>Latest News</h1>
 
@@ -83,22 +83,24 @@
 		<h2 class="news-title">{{ $n->title }} <small>{{ date("M d Y", strtotime($n->publish_date)) }}</small></h2>
 		{{ Markdown::parse(Str::words($n->content, 50)) }}
 
-		<p><a href="{{ route('wardrobe.posts.show', [$n->slug]) }}" class="btn btn-xs btn-link">Read More</a></p>
+		<p class="visible-xs visible-sm"><a href="{{ route('wardrobe.posts.show', [$n->slug]) }}" class="btn btn-lg btn-block btn-default">Read More</a></p>
+
+		<p class="visible-md visible-lg"><a href="{{ route('wardrobe.posts.show', [$n->slug]) }}" class="btn btn-default">Read More</a></p>
 
 		<?php ++$i;?>
 	@empty
 		{{ alert('warning', "No news found.") }}
 	@endforelse
 
-	<hr>
+	<hr class="partial-split">
 
 	<a name="help"></a><h1>Get Help</h1>
 
-	<p>Let's face it, sometimes things happen and you don't know how to fix it or you don't know the answer to a question. We're here to help in those situations. We've worked hard to provide as many options for you to get the help you need. If you need help with one of our products, these are the ways to get in touch:</p>
+	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
 
 	<dl>
 		<dt><a href="http://forums.anodyne-productions.com">The Forums</a></dt>
-		<dd>Our forums are the main way to get help with our products. You can also use the forms to ask questions, get direction and talk with other members of the community. (Requires registration)</dd>
+		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
 		
 		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>
 		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
