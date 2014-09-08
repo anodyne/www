@@ -30,7 +30,7 @@ class RoleSeeder extends Seeder {
 
 		foreach ($permissions as $permission)
 		{
-			PermissionModel::create($permission);
+			Permission::create($permission);
 		}
 
 		$roles = [
@@ -61,7 +61,7 @@ class RoleSeeder extends Seeder {
 
 		foreach ($roles as $r)
 		{
-			$role = RoleModel::create($r);
+			$role = Role::create($r);
 
 			foreach ($roleAssociations[$role->id] as $ra)
 			{

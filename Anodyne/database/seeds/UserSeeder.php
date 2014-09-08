@@ -47,7 +47,7 @@ class UserSeeder extends Seeder {
 			unset($user['access']);
 
 			// Create the user
-			$user = UserModel::create($user);
+			$user = User::create($user);
 
 			// Attach the role(s)
 			$user->roles()->sync($access);

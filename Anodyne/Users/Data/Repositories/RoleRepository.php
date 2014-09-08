@@ -1,6 +1,6 @@
-<?php namespace Anodyne\Users\Data\Repositories\Eloquent;
+<?php namespace Anodyne\Users\Data\Repositories;
 
-use RoleModel,
+use Role,
 	RoleRepositoryInterface;
 
 class RoleRepository implements RoleRepositoryInterface {
@@ -9,16 +9,16 @@ class RoleRepository implements RoleRepositoryInterface {
 	{
 		if ( ! $value)
 		{
-			return RoleModel::orderBy('name', 'asc')->get();
+			return Role::orderBy('name', 'asc')->get();
 		}
 
-		return RoleModel::orderBy('name', 'asc')->lists($value, $id);
+		return Role::orderBy('name', 'asc')->lists($value, $id);
 	}
 
 	public function create(array $data)
 	{
 		// Create the role
-		$role = RoleModel::create($data);
+		$role = Role::create($data);
 
 		if (array_key_exists('access', $data))
 		{
@@ -64,12 +64,12 @@ class RoleRepository implements RoleRepositoryInterface {
 
 	public function find($id)
 	{
-		return RoleModel::find($id);
+		return Role::find($id);
 	}
 
 	public function paginate($number)
 	{
-		return RoleModel::orderBy('name', 'asc')->paginate($number);
+		return Role::orderBy('name', 'asc')->paginate($number);
 	}
 
 	public function update($id, array $data)

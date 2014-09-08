@@ -198,9 +198,9 @@ return array(
 		/**
 		 * Models
 		 */
-		'PermissionModel'	=> 'Anodyne\Users\Data\Models\Eloquent\PermissionModel',
-		'RoleModel'			=> 'Anodyne\Users\Data\Models\Eloquent\RoleModel',
-		'UserModel'			=> 'Anodyne\Users\Data\Models\Eloquent\UserModel',
+		'Permission'	=> 'Anodyne\Users\Data\Models\Permission',
+		'Role'			=> 'Anodyne\Users\Data\Models\Role',
+		'User'			=> 'Anodyne\Users\Data\Models\User',
 
 		/**
 		 * Repository Interfaces
@@ -212,9 +212,9 @@ return array(
 		/**
 		 * Repositories
 		 */
-		'PermissionRepository'	=> 'Anodyne\Users\Data\Repositories\Eloquent\PermissionRepository',
-		'RoleRepository'		=> 'Anodyne\Users\Data\Repositories\Eloquent\RoleRepository',
-		'UserRepository'		=> 'Anodyne\Users\Data\Repositories\Eloquent\UserRepository',
+		'PermissionRepository'	=> 'Anodyne\Users\Data\Repositories\PermissionRepository',
+		'RoleRepository'		=> 'Anodyne\Users\Data\Repositories\RoleRepository',
+		'UserRepository'		=> 'Anodyne\Users\Data\Repositories\UserRepository',
 
 		/**
 		 * Mailers

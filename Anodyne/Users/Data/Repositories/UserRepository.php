@@ -1,24 +1,24 @@
-<?php namespace Anodyne\Users\Data\Repositories\Eloquent;
+<?php namespace Anodyne\Users\Data\Repositories;
 
-use UserModel,
+use User,
 	UserRepositoryInterface;
 
 class UserRepository implements UserRepositoryInterface {
 
 	public function all()
 	{
-		return UserModel::paginate(25);
+		return User::paginate(25);
 	}
 
 	public function count()
 	{
-		return UserModel::count();
+		return User::count();
 	}
 
 	public function create(array $data)
 	{
 		// Create the user
-		$user = UserModel::create($data);
+		$user = User::create($data);
 
 		// Set permissions for the user
 		$user->roles()->sync(\Roles::getDefaultRoles());
@@ -43,12 +43,12 @@ class UserRepository implements UserRepositoryInterface {
 
 	public function find($id)
 	{
-		return UserModel::find($id);
+		return User::find($id);
 	}
 
 	public function findByUsername($username)
 	{
-		return UserModel::with('roles', 'roles.perms')
+		return User::with('roles', 'roles.perms')
 			->username($username)->first();
 	}
 

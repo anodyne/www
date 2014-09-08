@@ -1,10 +1,10 @@
-<?php namespace Anodyne\Users\Data\Models\Eloquent;
+<?php namespace Anodyne\Users\Data\Models;
 
 use Config, SoftDeletingTrait;
 use Zizaco\Entrust\EntrustRole;
 use Laracasts\Presenter\PresentableTrait;
 
-class RoleModel extends EntrustRole {
+class Role extends EntrustRole {
 
     use PresentableTrait;
     use SoftDeletingTrait;
