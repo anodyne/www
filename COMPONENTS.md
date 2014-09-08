@@ -4,8 +4,6 @@
 
 - [Laravel](http://laravel.com)
 	- Version: 4.2.8
-- [Fractal](http://fractal.thephpleague.com/)
-	- Version: 0.9.1
 - [Parsedown](http://parsedown.org/)
 	- Version: 1.0.1
 - [Browser](https://github.com/Ikimea/Browser)
@@ -16,8 +14,6 @@
 	- Version: 4.2.1
 - [Entrust](https://github.com/Zizaco/entrust)
 	- Version: 1.2.3
-- [Ardent](https://github.com/laravelbook/ardent)
-	- Version: 2.4.2
 - [Github API](https://github.com/KnpLabs/php-github-api)
 	- Version: 1.3.0
 - [Wardrobe Core](https://github.com/wardrobecms/core)
