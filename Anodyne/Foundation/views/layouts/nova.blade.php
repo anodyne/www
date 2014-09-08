@@ -71,5 +71,6 @@
 				}).modal('show');
 			});
 		</script>
+		@yield('scripts')
 	</body>
 </html>
