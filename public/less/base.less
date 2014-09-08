@@ -134,7 +134,7 @@ header {
 		letter-spacing: 0.01em;
 		outline: none;
 
-		&:hover {
+		&:hover, &:active {
 			text-decoration: none;
 		}
 	}
@@ -304,7 +304,6 @@ section {
 
 footer, .push {
 	height: @footer-height;
-	padding-top: 27px;
 }
 footer {
 	padding: @spacing 0;
@@ -364,6 +363,13 @@ form {
 	.help-block {
 		font-size: @font-size-sm;
 	}
+}
+
+label {
+	font-weight: 600;
+	font-family: @font-special;
+	color: @color-gray-dark;
+	font-size: @font-size;
 }
 
 .has-warning .help-block,
