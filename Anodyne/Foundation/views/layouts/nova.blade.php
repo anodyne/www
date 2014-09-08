@@ -39,11 +39,8 @@
 		
 		@include('partials.footer')
 
-		<div id="contactModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content"></div>
-			</div>
-		</div>
+		{{ modal(['id' => 'contactModal', 'header' => "Contact Anodyne"]) }}
+		@yield('modals')
 		
 		@if (App::environment() == 'production')
 			<!--[if lt IE 9]>
