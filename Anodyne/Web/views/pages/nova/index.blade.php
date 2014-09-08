@@ -89,7 +89,7 @@
 
 				<div id="download-container" class="hide">
 					<div class="form-group">
-						<a href="#" class="btn btn-lg btn-block btn-primary" id="download-btn">Download (<span class="genre-text"></span>)</a>
+						<a href="#" class="btn btn-lg btn-block btn-primary track-download" id="download-btn">Download (<span class="genre-text"></span>)</a>
 					</div>
 				</div>
 			</div>
@@ -146,8 +146,29 @@
 	</dl>
 @stop
 
+@section('modals')
+	{{ modal(['id' => 'download-confirm', 'header' => 'Thank You For Choosing Nova!', 'body' => '<p>Your download will start momentarily...</p>']) }}
+@stop
+
 @section('scripts')
 	<script>
+		$('.track-download').click(function(e)
+		{
+			e.preventDefault();
+
+			var clicked = $(this);
+			
+			// Show the modal
+			$('#download-confirm').modal('show');
+
+			// Start the countdown
+			setTimeout(function()
+			{
+				$('#download-confirm').modal('hide');
+				window.location.href = clicked.attr('href');
+			}, 3000);
+		});
+
 		$('[rel="download"]').on('change', function()
 		{
 			// Get the variables
@@ -161,7 +182,7 @@
 			if (genre != '---')
 			{
 				// Build the link
-				$('#download-btn').attr('href', "https://s3.amazonaws.com/anodyneproductions/nova/nova-" + version + "-" + genre + ".zip");
+				$('#download-btn').attr('href', "{{ $_ENV['FS_URL'] }}nova/nova-" + version + "-" + genre + ".zip");
 				$('#download-btn .genre-text').html(genre.toUpperCase());
 				
 				// Show the download button
