@@ -1,15 +1,16 @@
 {
 	"require": {
 		"laravel/framework": "4.2.*",
-		"league/flysystem": "~0.4",
 		"erusev/parsedown": "~1.0",
 		"ikimea/browser": "~1.0",
 		"laracasts/presenter": "~0.1",
 		"guzzlehttp/guzzle": "~4.0",
 		"zizaco/entrust": "1.2.*",
+		"forxer/Gravatar": "~1.2",
+
+		"league/flysystem": "~0.4",
 		"knplabs/github-api": "~1.2",
-		"wardrobe/core": "1.*",
-		"forxer/Gravatar": "~1.2"
+		"wardrobe/core": "1.*"
 	},
 
 	"require-dev": {
