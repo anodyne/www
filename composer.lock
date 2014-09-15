@@ -902,16 +902,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "0.5.5",
+            "version": "0.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "17bb2a0f522f3d325b6406a9db0292bc7484ade5"
+                "reference": "6f626418670641bc643962cd85b2d33ec4c87137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/17bb2a0f522f3d325b6406a9db0292bc7484ade5",
-                "reference": "17bb2a0f522f3d325b6406a9db0292bc7484ade5",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/6f626418670641bc643962cd85b2d33ec4c87137",
+                "reference": "6f626418670641bc643962cd85b2d33ec4c87137",
                 "shasum": ""
             },
             "require": {
@@ -919,7 +919,9 @@
             },
             "require-dev": {
                 "aws/aws-sdk-php": "~2.4",
+                "barracuda/copy": "~1.1.4",
                 "dropbox/dropbox-sdk": "~1.1.1",
+                "guzzlehttp/guzzle": "~4.0",
                 "league/event": "~0.3",
                 "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9@dev",
@@ -932,7 +934,9 @@
             },
             "suggest": {
                 "aws/aws-sdk-php": "Allows you to use AWS S3 storage",
+                "barracuda/copy": "Allows you to use Copy.com storage",
                 "dropbox/dropbox-sdk": "Allows you to use Dropbox storage",
+                "guzzlehttp/guzzle": "Allows you to use http files (reading only)",
                 "league/event": "Required for EventableFilesystem",
                 "phpseclib/phpseclib": "Allows SFTP server storage",
                 "predis/predis": "Allows you to use Predis for caching",
@@ -942,7 +946,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6-dev"
+                    "dev-master": "0.5-dev"
                 }
             },
             "autoload": {
@@ -974,7 +978,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2014-08-26 11:05:47"
+            "time": "2014-09-06 17:49:44"
         },
         {
             "name": "michelf/php-markdown",
@@ -1097,16 +1101,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551"
+                "reference": "cde7a00d1410a17fb6d61b993cb017a78be1137c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
-                "reference": "2b60366be6dcb9f9cd3e244ab25eb98eaea99551",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cde7a00d1410a17fb6d61b993cb017a78be1137c",
+                "reference": "cde7a00d1410a17fb6d61b993cb017a78be1137c",
                 "shasum": ""
             },
             "require": {
@@ -1139,7 +1143,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2014-08-26 03:18:44"
+            "time": "2014-09-10 03:26:33"
         },
         {
             "name": "nikic/php-parser",
@@ -1244,16 +1248,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "0.3.7",
+            "version": "0.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "8b8c62f278e363b75ddcacaf5803710232fbd3e4"
+                "reference": "5085202f1f37769aae59f9711c423f28159c9b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/8b8c62f278e363b75ddcacaf5803710232fbd3e4",
-                "reference": "8b8c62f278e363b75ddcacaf5803710232fbd3e4",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/5085202f1f37769aae59f9711c423f28159c9b29",
+                "reference": "5085202f1f37769aae59f9711c423f28159c9b29",
                 "shasum": ""
             },
             "require": {
@@ -1262,6 +1266,7 @@
             "require-dev": {
                 "phing/phing": "2.7.*",
                 "phpunit/phpunit": "4.0.*",
+                "sami/sami": "1.*",
                 "squizlabs/php_codesniffer": "1.*"
             },
             "suggest": {
@@ -1337,7 +1342,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2014-07-05 16:36:21"
+            "time": "2014-09-13 02:42:45"
         },
         {
             "name": "predis/predis",
@@ -2484,16 +2489,16 @@
     "packages-dev": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v1.7.4",
+            "version": "v1.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "1559bfcb6e244802f9f3fa3c8ea9b21e5699cc5d"
+                "reference": "a6b5f3e93e7539473ff7940f87f2e3e0c6e097c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/1559bfcb6e244802f9f3fa3c8ea9b21e5699cc5d",
-                "reference": "1559bfcb6e244802f9f3fa3c8ea9b21e5699cc5d",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/a6b5f3e93e7539473ff7940f87f2e3e0c6e097c2",
+                "reference": "a6b5f3e93e7539473ff7940f87f2e3e0c6e097c2",
                 "shasum": ""
             },
             "require": {
@@ -2534,7 +2539,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2014-09-08 19:15:48"
+            "time": "2014-09-12 13:48:09"
         },
         {
             "name": "fzaninotto/faker",
