@@ -3,7 +3,9 @@
 ## PHP
 
 - [Laravel](http://laravel.com)
-	- Version: 4.2.8
+	- Version: 4.2.9
+- [Flysystem](http://flysystem.thephpleague.com/)
+	- Version: 0.5.7
 - [Parsedown](http://parsedown.org/)
 	- Version: 1.0.1
 - [Browser](https://github.com/Ikimea/Browser)
