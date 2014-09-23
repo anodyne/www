@@ -17,7 +17,7 @@
 - [Entrust](https://github.com/Zizaco/entrust)
 	- Version: 1.2.3
 - [Github API](https://github.com/KnpLabs/php-github-api)
-	- Version: 1.3.0
+	- Version: 1.3.1
 - [Wardrobe Core](https://github.com/wardrobecms/core)
 	- Version: 1.2.0
 - [Gravatar](https://github.com/forxer/gravatar)
