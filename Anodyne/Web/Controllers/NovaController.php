@@ -47,4 +47,9 @@ class NovaController extends \BaseController {
 			->with(compact('versions', 'genres'));
 	}
 
+	public function nextgen()
+	{
+		return View::make('pages.nova.nextgen');
+	}
+
 }

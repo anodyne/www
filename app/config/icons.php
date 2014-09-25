@@ -56,4 +56,19 @@ return array(
 
 	'warning' => '<span class="icn" data-icon="!"></span>',
 
+	'preview' => [
+
+		'arc' => '<span class="icn-preview" data-icon="s"></span>',
+		'content' => '<span class="icn-preview" data-icon="p"></span>',
+		'forms' => '<span class="icn-preview" data-icon="f"></span>',
+		'forums' => '<span class="icn-preview" data-icon="o"></span>',
+		'join' => '<span class="icn-preview" data-icon="u"></span>',
+		'manifests' => '<span class="icn-preview" data-icon="v"></span>',
+		'messages' => '<span class="icn-preview" data-icon="e"></span>',
+		'mobile' => '<span class="icn-preview" data-icon="m"></span>',
+		'ranks' => '<span class="icn-preview" data-icon="r"></span>',
+		'setup' => '<span class="icn-preview" data-icon="w"></span>',
+
+	],
+
 );

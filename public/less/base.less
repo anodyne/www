@@ -203,6 +203,13 @@ section {
 		&:active {
 			outline: none;
 		}
+
+		&.icn-preview {
+			&:hover {
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
 	}
 
 	h1 {
@@ -218,6 +225,23 @@ section {
 		font-family: @font-special;
 		font-weight: 500;
 		font-style: italic;
+
+		&.preview {
+			text-align: center;
+			font-size: 40px;
+
+			small {
+				display: block;
+				margin-top: @spacing-sm;
+
+				font-style: normal;
+				font-size: 20px;
+			}
+		}
+	}
+
+	h3 {
+		font-weight: 600;
 	}
 
 	ul, ol {

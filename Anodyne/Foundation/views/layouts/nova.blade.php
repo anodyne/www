@@ -67,6 +67,12 @@
 					remote: "{{ route('contact') }}"
 				}).modal('show');
 			});
+
+			$(document).ready(function()
+			{
+				$('.tooltip-bottom').tooltip({ placement: "bottom" });
+				$('.tooltip-top').tooltip({ placement: "top" });
+			});
 		</script>
 		@yield('scripts')
 	</body>

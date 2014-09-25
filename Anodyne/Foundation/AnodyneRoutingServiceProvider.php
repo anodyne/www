@@ -54,6 +54,10 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 			Route::get('/', [
 				'as'	=> 'nova.home',
 				'uses'	=> 'NovaController@index']);
+
+			Route::get('next-gen', [
+				'as'	=> 'nova.next-gen',
+				'uses'	=> 'NovaController@nextgen']);
 		});
 	}
 

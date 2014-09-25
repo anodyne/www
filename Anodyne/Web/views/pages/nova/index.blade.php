@@ -14,13 +14,11 @@
 	<div class="row">
 		<div class="col-sm-6">
 			<h2>Post Locking</h2>
-			
 			<p>Frustrated when an update you just made to a post gets wiped out because someone else was editing at the same time? No more. Never have your changes overwritten with a smart post locking system that locks and unlocks multi-author posts during editing.</p>
 		</div>
 		
 		<div class="col-sm-6">
 			<h2>Say Anything</h2>
-			
 			<p>Site messages in Nova can now contain previously disallowed HTML content meaning that just about anything you want to share can be done from right inside Nova without having to touch any files. Just copy and paste your code into the message!</p>
 		</div>
 	</div>
@@ -174,10 +172,6 @@
 			// Get the variables
 			var genre = $('[name="genre"]').val();
 			var version = $('[name="version"]').val();
-
-			console.log(genre);
-			console.log(version);
-			console.log(genre.toUpperCase());
 
 			if (genre != '---')
 			{
