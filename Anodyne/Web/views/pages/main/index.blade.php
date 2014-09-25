@@ -13,15 +13,13 @@
 
 	<hr class="partial-split">
 
-	<a name="products"></a><h1>Our Products</h1>
+	<a name="products"></a><h1>Products &amp; Services</h1>
 
 	<div class="row">
 		<div class="col-md-4">
 			<div class="well">
 				<h2 class="text-center">Nova <small><?php echo $version;?></small></h2>
-				
 				<p>Nova is an easy-to-use and powerful RPG management system to help you manage your online RPG so you can get back to playing it.</p>
-				
 				<p><a href="{{ route('nova.home') }}" class="btn btn-primary btn-lg btn-block">Get Nova</a></p>
 			</div>
 		</div>
@@ -29,9 +27,7 @@
 		<div class="col-md-4">
 			<div class="well">
 				<h2 class="text-center">AnodyneXtras</h2>
-				
 				<p>Looking for a new skin for your sim? Need a MOD to do something special? AnodyneXtras is your one-stop-shop for all Nova content.</p>
-				
 				<p><a href="http://xtras.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Explore Xtras</a></p>
 			</div>
 		</div>
@@ -39,9 +35,7 @@
 		<div class="col-md-4">
 			<div class="well">
 				<h2 class="text-center">Forums</h2>
-
 				<p>Everything from how to do something in Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
-		
 				<p><a href="http://forums.anodyne-productions.com" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
 			</div>
 		</div>
@@ -55,13 +49,11 @@
 				<div class="row">
 					<div class="col-md-6">
 						<p class="text-sm">Everything you could ever want or need to know about Anodyne's products can be found in our learning system. Take courses to get proficient with our products and share that knowledge with others!</p>
-				
 						<p><a href="/nova" class="btn btn-primary btn-lg btn-block">Learn</a></p>
 					</div>
 					
 					<div class="col-md-6">
 						<p class="text-sm">If you're having an issue with one of our products, this is the first place to look. We've compiled frequently asked questions as well as common issues in a simple, searchable site so you can get back to your game!</p>
-				
 						<p><a href="/nova" class="btn btn-primary btn-lg btn-block">Visit the Help Center</a></p>
 					</div>
 				</div>
