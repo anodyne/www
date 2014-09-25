@@ -9,9 +9,9 @@
 		<div class="col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3">
 			<h1>Log In</h1>
 
-			<p>Your AnodyneID gives you access to a growing array of Anodyne services and sites including AnodyneXtras. If you don't have an AnodyneID, you can create one by registering.</p>
+			<p>Your AnodyneID gives you access to the growing array of Anodyne services and sites, including AnodyneXtras. If you don't have an AnodyneID, you can create one by <a href="{{ route('register') }}">registering</a>.</p>
 
-			<hr>
+			<hr class="partial-split">
 
 			{{ Form::open(['route' => 'login.do']) }}
 				<div class="form-group{{ ($errors->has('email')) ? ' has-error' : '' }}">

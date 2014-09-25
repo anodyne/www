@@ -11,7 +11,7 @@
 
 			<p>Registering for an AnodyneID will give you access to a growing array of services and sites, including AnodyneXtras and others in the future.</p>
 
-			<hr>
+			<hr class="partial-split">
 
 			{{ Form::open(['route' => 'register.do']) }}
 				<div class="form-group{{ ($errors->has('name')) ? ' has-error' : '' }}">
