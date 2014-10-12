@@ -45,6 +45,8 @@ class RoleSeeder extends Seeder {
 			['name' => "Help Article Author"],
 
 			['name' => "Users Administrator"],
+
+			['name' => "Suspended User"],
 		];
 
 		$roleAssociations = [
@@ -58,6 +60,8 @@ class RoleSeeder extends Seeder {
 			7 => [10],
 
 			8 => [13, 14, 15],
+
+			9 => [],
 		];
 
 		foreach ($roles as $r)
