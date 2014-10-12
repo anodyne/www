@@ -3,7 +3,7 @@
 ## PHP
 
 - [Laravel](http://laravel.com)
-	- Version: 4.2.9
+	- Version: 4.2.11
 - [Flysystem](http://flysystem.thephpleague.com/)
 	- Version: 0.5.7
 - [Parsedown](http://parsedown.org/)
@@ -13,9 +13,9 @@
 - [Presenter](https://github.com/laracasts/Presenter)
 	- Version: 0.1.4
 - [Guzzle](http://guzzlephp.org/)
-	- Version: 4.2.2
+	- Version: 4.2.3
 - [Entrust](https://github.com/Zizaco/entrust)
-	- Version: 1.2.5
+	- Version: 1.3.0
 - [Github API](https://github.com/KnpLabs/php-github-api)
 	- Version: 1.3.1
 - [Wardrobe Core](https://github.com/wardrobecms/core)
