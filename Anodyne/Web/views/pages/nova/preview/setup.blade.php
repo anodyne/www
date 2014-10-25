@@ -3,7 +3,7 @@
 <div class="row">
 	<div class="col-md-4">
 		<h3>All In One Place</h3>
-		<p>We've re-thought how you get up and running with Nova and put everything you need in once place.</p>
+		<p>We've re-thought how you get up and running with Nova and put everything you need in one place.</p>
 	</div>
 	<div class="col-md-4">
 		<h3>It Reads Your Mind</h3>
