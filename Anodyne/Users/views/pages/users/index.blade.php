@@ -36,12 +36,12 @@
 					<div class="visible-xs visible-sm">
 						<div class="row">
 							<div class="col-sm-6">
-								<p><a href="{{ route('admin.users.edit', [$user->username]) }}" class="btn btn-lg btn-block btn-default">{{ $_icons['edit'] }}</a></p>
+								<p><a href="{{ route('admin.users.edit', [$user->username]) }}" class="btn btn-lg btn-block btn-default">Edit</a></p>
 							</div>
 
 							@if ($_currentUser->id != $user->id)
 								<div class="col-sm-6">
-									<p><a href="#" class="btn btn-lg btn-block btn-danger js-user-action" data-action="delete" data-username="{{ $user->username }}">{{ $_icons['remove'] }}</a></p>
+									<p><a href="#" class="btn btn-lg btn-block btn-danger js-user-action" data-action="delete" data-username="{{ $user->username }}">Remove</a></p>
 								</div>
 							@endif
 						</div>
@@ -49,12 +49,12 @@
 					<div class="visible-md visible-lg">
 						<div class="btn-toolbar pull-right">
 							<div class="btn-group">
-								<a href="{{ route('admin.users.edit', [$user->username]) }}" class="btn btn-default">{{ $_icons['edit'] }}</a>
+								<a href="{{ route('admin.users.edit', [$user->username]) }}" class="btn btn-default">Edit</a>
 							</div>
 
 							@if ($_currentUser->id != $user->id)
 								<div class="btn-group">
-									<a href="#" class="btn btn-danger js-user-action" data-action="delete" data-username="{{ $user->username }}">{{ $_icons['remove'] }}</a>
+									<a href="#" class="btn btn-danger js-user-action" data-action="delete" data-username="{{ $user->username }}">Remove</a>
 								</div>
 							@endif
 						</div>
