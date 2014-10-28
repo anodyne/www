@@ -2,6 +2,8 @@
 
 use App, Config, View;
 use Ikimea\Browser\Browser;
+use League\Flysystem\Filesystem,
+	League\Flysystem\Adapter\Local;
 use Illuminate\Support\ServiceProvider;
 
 class AnodyneServiceProvider extends ServiceProvider {
@@ -12,6 +14,7 @@ class AnodyneServiceProvider extends ServiceProvider {
 		$this->registerMarkdown();
 		$this->registerGithub();
 		$this->registerFlashNotifier();
+		$this->registerFilesystem();
 	}
 
 	public function boot()
@@ -71,6 +74,14 @@ class AnodyneServiceProvider extends ServiceProvider {
 		$this->app['flash'] = $this->app->share(function($app)
 		{
 			return new Services\FlashNotifierService($app['session.store']);
+		});
+	}
+
+	protected function registerFilesystem()
+	{
+		$this->app['filesystem'] = $this->app->share(function($app)
+		{
+			return new Filesystem(new Local($_ENV['FS_PATH']));
 		});
 	}
 

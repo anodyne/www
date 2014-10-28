@@ -85,6 +85,7 @@ class AnodyneUsersServiceProvider extends ServiceProvider {
 				'as'	=> 'users.update',
 				'uses'	=> 'UsersController@update']);
 			Route::get('users/delete/{username}', 'UsersController@delete');
+			Route::get('users/password/{id}', 'UsersController@changePassword');
 
 			/**
 			 * Roles routes

@@ -1,7 +1,11 @@
 <nav class="nav-global visible-xs">
 	<div class="container">
 		<ul>
-			<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Anodyne<div class="arrow"></div></a></li>
+			@if ($active == 'nova')
+				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Nova<div class="arrow"></div></a></li>
+			@else
+				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Anodyne<div class="arrow"></div></a></li>
+			@endif
 		</ul>
 	</div>
 </nav>
@@ -19,10 +23,9 @@
 					<li><a href="{{ route('nova.home') }}">Nova</a></li>
 					<li><a href="http://xtras.anodyne-productions.com">Xtras</a></li>
 					<li><a href="http://forums.anodyne-productions.com">Forums</a></li>
-					<!--<li><a href="http://help.anodyne-productions.com">Help<div class="arrow"></div></a></li>
-					<li><a href="http://learn.anodyne-productions.com">Learn<div class="arrow"></div></a></li>-->
-					<li><a href="http://docs.anodyne-productions.com">Docs</a></li>
-					<li class="visible-sm"><a href="#" class="js-contact">Contact</a></li>
+					<li><a href="#" class="js-contact">Contact</a></li>
+					<li><a href="{{ route('register') }}">Register</a></li>
+					<li><a href="{{ route('login') }}">Log In</a></li>
 				</ul>
 			</div>
 			<div class="modal-footer">
@@ -76,8 +79,9 @@
 			<li><a href="http://forums.anodyne-productions.com">Forums<div class="arrow"></div></a></li>
 			<!--<li><a href="http://help.anodyne-productions.com">Help<div class="arrow"></div></a></li>
 			<li><a href="http://learn.anodyne-productions.com">Learn<div class="arrow"></div></a></li>-->
-			<li><a href="http://docs.anodyne-productions.com">Docs<div class="arrow"></div></a></li>
 			<li class="visible-sm"><a href="#" class="js-contact">Contact</a></li>
+			<li class="visible-sm"><a href="{{ route('register') }}">Register</a></li>
+			<li class="visible-sm"><a href="{{ route('login') }}">Log In</a></li>
 		</ul>
 	</div>
 </nav>

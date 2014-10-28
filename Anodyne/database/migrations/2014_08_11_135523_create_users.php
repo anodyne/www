@@ -21,7 +21,6 @@ class CreateUsers extends Migration {
 			$table->string('password');
 			$table->text('url')->nullable();
 			$table->text('bio')->nullable();
-			$table->string('avatar')->nullable();
 			$table->string('twitter')->nullable();
 			$table->string('facebook')->nullable();
 			$table->string('google')->nullable();

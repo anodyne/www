@@ -89,8 +89,34 @@ class UsersController extends \BaseController {
 		{
 			// Validate
 
-			// Update the user
-			$user = $this->users->update($username, Input::all());
+			if (Input::has('formAction'))
+			{
+				// Get the user
+				$u = $this->users->findByUsername($username);
+
+				if (\Hash::check(Input::get('password_old'), $u->password))
+				{
+					// Update the user
+					$this->users->update($username, ['password' => Input::get('password')]);
+
+					// Set the flash message
+					Flash::success("Your password was successfully changed.");
+
+					return Redirect::route('admin.users.edit', [$username]);
+				}
+				else
+				{
+					// Set the flash message
+					Flash::error("Your password was wrong. Please try again.");
+
+					return Redirect::route('admin.users.edit', [$username]);
+				}
+			}
+			else
+			{
+				// Update the user
+				$user = $this->users->update($username, Input::all());
+			}
 
 			// Fire the event
 			Event::fire('user.updated', [$user->id, Input::all()]);
@@ -146,6 +172,21 @@ class UsersController extends \BaseController {
 		}
 
 		return $this->errorUnauthorized("You do not have permission to delete users!");
+	}
+
+	public function changePassword($id)
+	{
+		// Get the user
+		$user = $this->users->find($id);
+
+		if ($this->currentUser->id == $user->id)
+		{
+			return partial('modal_content', array(
+				'modalHeader'	=> "Change Password",
+				'modalBody'		=> View::make('pages.users.change-password')->with('user', $user),
+				'modalFooter'	=> false,
+			));
+		}
 	}
 
 }

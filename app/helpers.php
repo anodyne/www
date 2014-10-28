@@ -36,3 +36,11 @@ if ( ! function_exists('alert'))
 			->withContent($message);
 	}
 }
+
+if ( ! function_exists('flash'))
+{
+	function flash($level, $message)
+	{
+		return alert($level, $message);
+	}
+}

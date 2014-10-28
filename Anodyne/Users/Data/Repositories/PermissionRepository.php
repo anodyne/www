@@ -1,6 +1,6 @@
-<?php namespace Anodyne\Users\Data\Repositories\Eloquent;
+<?php namespace Anodyne\Users\Data\Repositories;
 
-use PermissionModel,
+use Permission,
 	PermissionRepositoryInterface;
 
 class PermissionRepository implements PermissionRepositoryInterface {
@@ -9,16 +9,16 @@ class PermissionRepository implements PermissionRepositoryInterface {
 	{
 		if ( ! $value)
 		{
-			return PermissionModel::orderBy('name', 'asc')->get();
+			return Permission::orderBy('name', 'asc')->get();
 		}
 
-		return PermissionModel::orderBy('name', 'asc')->lists($value, $id);
+		return Permission::orderBy('name', 'asc')->lists($value, $id);
 	}
 
 	public function create(array $data)
 	{
 		// Create the role
-		$role = PermissionModel::create($data);
+		$role = Permission::create($data);
 
 		if (array_key_exists('access', $data))
 		{
@@ -55,12 +55,12 @@ class PermissionRepository implements PermissionRepositoryInterface {
 
 	public function find($id)
 	{
-		return PermissionModel::find($id);
+		return Permission::find($id);
 	}
 
 	public function paginate($number)
 	{
-		return PermissionModel::orderBy('name', 'asc')->paginate($number);
+		return Permission::orderBy('name', 'asc')->paginate($number);
 	}
 
 	public function update($id, array $data)

@@ -6,13 +6,16 @@
 
 @section('content')
 	<div class="row">
-		<div class="col-md-8 col-lg-6 col-md-offset-2 col-lg-offset-3">
+		<div class="col-md-8 col-md-offset-2">
 			<h1>Register</h1>
 
-			<p>Registering for an AnodyneID will give you access to a growing array of services and sites, including AnodyneXtras and others in the future.</p>
+			<p>Everyone hates have tons of account for different services, so we wanted to do our part to help alleviate that problem. The AnodyneID gives you access to the growing array of services and sites offered by Anodyne Productions. Currently, you can use your AnodyneID to manage your profile and use the AnodyneXtras services. In the future, you'll be able to use your AnodyneID for additional services and sites that we open.</p>
 
-			<hr>
-
+			<hr class="partial-split">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
 			{{ Form::open(['route' => 'register.do']) }}
 				<div class="form-group{{ ($errors->has('name')) ? ' has-error' : '' }}">
 					<label class="control-label">Name</label>
@@ -53,7 +56,7 @@
 
 				<div class="form-group">
 					{{ Form::button('Register', ['type' => 'submit', 'class' => 'btn btn-lg btn-block btn-primary']) }}
-					<a href="{{ route('login') }}" class="btn btn-block btn-link">Log In Now</a>
+					<a href="{{ route('login') }}" class="btn btn-block btn-link">Already Have an AnodyneID? Log In Now</a>
 				</div>
 			{{ Form::close() }}
 		</div>

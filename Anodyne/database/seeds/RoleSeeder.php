@@ -13,6 +13,7 @@ class RoleSeeder extends Seeder {
 			['display_name' => "Create Xtra", 'name' => "xtras.item.create"],
 			['display_name' => "Edit Xtra", 'name' => "xtras.item.edit"],
 			['display_name' => "Delete Xtra", 'name' => "xtras.item.delete"],
+			['display_name' => "Upload Files", 'name' => "xtras.item.upload"],
 			['display_name' => "Skin Xtras", 'name' => "xtras.item.skins"],
 			['display_name' => "MOD Xtras", 'name' => "xtras.item.mods"],
 			['display_name' => "Rank Xtras", 'name' => "xtras.item.ranks"],
@@ -30,7 +31,7 @@ class RoleSeeder extends Seeder {
 
 		foreach ($permissions as $permission)
 		{
-			PermissionModel::create($permission);
+			Permission::create($permission);
 		}
 
 		$roles = [
@@ -44,24 +45,28 @@ class RoleSeeder extends Seeder {
 			['name' => "Help Article Author"],
 
 			['name' => "Users Administrator"],
+
+			['name' => "Suspended User"],
 		];
 
 		$roleAssociations = [
-			1 => [7],
-			2 => [1, 2, 3],
-			3 => [4],
-			4 => [5],
-			5 => [6],
+			1 => [8],
+			2 => [1, 2, 3, 4],
+			3 => [5],
+			4 => [6],
+			5 => [7],
 
-			6 => [8, 10, 11],
-			7 => [9],
+			6 => [9, 11, 11],
+			7 => [10],
 
-			8 => [12, 13, 14],
+			8 => [13, 14, 15],
+
+			9 => [],
 		];
 
 		foreach ($roles as $r)
 		{
-			$role = RoleModel::create($r);
+			$role = Role::create($r);
 
 			foreach ($roleAssociations[$role->id] as $ra)
 			{

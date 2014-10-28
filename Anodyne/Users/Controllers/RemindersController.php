@@ -1,11 +1,16 @@
 <?php namespace Anodyne\Users\Controllers;
 
-use View,
+use App,
+	Hash,
+	Lang,
+	View,
+	Flash,
 	Input,
 	Password,
-	Redirect;
+	Redirect,
+	BaseController;
 
-class RemindersController extends \BaseController {
+class RemindersController extends BaseController {
 
 	public function remind()
 	{
@@ -17,16 +22,22 @@ class RemindersController extends \BaseController {
 		switch ($response = Password::remind(Input::only('email')))
 		{
 			case Password::INVALID_USER:
-				return Redirect::back()->with('error', Lang::get($response));
+				Flash::error(Lang::get($response));
+
+				return Redirect::back();
+			break;
 
 			case Password::REMINDER_SENT:
-				return Redirect::back()->with('status', Lang::get($response));
+				Flash::success(Lang::get($response));
+
+				return Redirect::back();
+			break;
 		}
 	}
 
 	public function reset($token = null)
 	{
-		if (is_null($token)) \App::abort(404);
+		if (is_null($token)) App::abort(404);
 
 		return View::make('pages.password.reset')->with('token', $token);
 	}
@@ -39,7 +50,7 @@ class RemindersController extends \BaseController {
 
 		$response = Password::reset($credentials, function($user, $password)
 		{
-			$user->password = \Hash::make($password);
+			$user->password = $password;
 			$user->save();
 		});
 
@@ -48,10 +59,16 @@ class RemindersController extends \BaseController {
 			case Password::INVALID_PASSWORD:
 			case Password::INVALID_TOKEN:
 			case Password::INVALID_USER:
-				return Redirect::back()->with('error', Lang::get($response));
+				Flash::error(Lang::get($response));
+
+				return Redirect::back();
+			break;
 
 			case Password::PASSWORD_RESET:
-				return Redirect::to('/');
+				Flash::success("Your password has been reset.");
+
+				return Redirect::to('login');
+			break;
 		}
 	}
 

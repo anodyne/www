@@ -9,9 +9,11 @@
 
 	<div class="btn-toolbar">
 		<div class="btn-group">
-			<a href="#" class="btn btn-default">Change Password</a>
+			<a href="#" class="btn btn-default js-user-action" data-action="password" data-id="{{ $user->id }}">Change Password</a>
 		</div>
 	</div>
+
+	{{ alert('info', "Avatars for your account are handled through <a href='https://secure.gravatar.com/' target='_blank'>Gravatar</a>. If you would like to have a personalized avatar used throughout Anodyne's sites, you should setup your Gravatar at their site.") }}
 
 	{{ Form::model($user, ['route' => ['admin.users.update', $user->username], 'method' => 'put']) }}
 		<div class="row">
@@ -118,4 +120,27 @@
 			</div>
 		</div>
 	{{ Form::close() }}
+@stop
+
+@section('modals')
+	{{ modal(array('id' => 'changePassword', 'header' => "Change Password")) }}
+@stop
+
+@section('scripts')
+	<script>
+		$('.js-user-action').on('click', function(e)
+		{
+			e.preventDefault();
+
+			var action = $(this).data('action');
+			var id = $(this).data('id');
+
+			if (action == 'password')
+			{
+				$('#changePassword').modal({
+					remote: "{{ URL::to('admin/users/password') }}/" + id
+				}).modal('show');
+			}
+		});
+	</script>
 @stop

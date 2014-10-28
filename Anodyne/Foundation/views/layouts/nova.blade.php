@@ -6,8 +6,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="Anodyne Productions">
 		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/x-icon" href="favicon.ico?v2">
-		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico?v1') }}">
+		<link rel="apple-touch-icon-precomposed" href="{{ asset('apple-touch-icon.png') }}">
 
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="js/html5shiv.js"></script>
@@ -39,11 +39,8 @@
 		
 		@include('partials.footer')
 
-		<div id="contactModal" class="modal fade">
-			<div class="modal-dialog">
-				<div class="modal-content"></div>
-			</div>
-		</div>
+		{{ modal(['id' => 'contactModal', 'header' => "Contact Anodyne"]) }}
+		@yield('modals')
 		
 		@if (App::environment() == 'production')
 			<!--[if lt IE 9]>
@@ -70,6 +67,13 @@
 					remote: "{{ route('contact') }}"
 				}).modal('show');
 			});
+
+			$(document).ready(function()
+			{
+				$('.tooltip-bottom').tooltip({ placement: "bottom" });
+				$('.tooltip-top').tooltip({ placement: "top" });
+			});
 		</script>
+		@yield('scripts')
 	</body>
 </html>

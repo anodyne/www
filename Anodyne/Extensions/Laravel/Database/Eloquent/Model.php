@@ -1,16 +1,8 @@
 <?php namespace Anodyne\Extensions\Laravel\Database\Eloquent;
 
 use Date;
-use LaravelBook\Ardent\Ardent;
 
-abstract class Model extends Ardent {
-
-	// Hydrate models from the input array
-	public $autoHydrateEntityFromInput = false;
-	public $forceEntityHydrationFromInput = false;
-
-	// Get rid of attributes we don't need
-	public $autoPurgeRedundantAttributes = false;
+abstract class Model extends \Eloquent {
 	
 	/*
 	|--------------------------------------------------------------------------

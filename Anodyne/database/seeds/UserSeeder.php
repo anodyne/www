@@ -16,7 +16,6 @@ class UserSeeder extends Seeder {
 				'password'	=> "password",
 				'url'		=> "http://anodyne-productions.com",
 				'username'	=> 'anodyne',
-				'avatar'	=> "anodyneproductions.jpg",
 				'access'	=> [1, 2, 3, 4, 5, 6, 7, 8],
 				'twitter'	=> '@anodyneprod',
 				'facebook'	=> 'http://www.facebook.com/anodyneproductions',
@@ -25,7 +24,15 @@ class UserSeeder extends Seeder {
 
 		if (App::environment() != 'production')
 		{
-			$faker = Faker\Factory::create();
+			$users[] = [
+				'name'		=> "David VanScott",
+				'email'		=> "david@example.com",
+				'password'	=> "password",
+				'username'	=> 'agentphoenix',
+				'access'	=> [2, 3, 4],
+			];
+
+			/*$faker = Faker\Factory::create();
 
 			for ($i = 1; $i <= 49; $i++)
 			{
@@ -37,7 +44,7 @@ class UserSeeder extends Seeder {
 					'username' => $faker->userName,
 					'access' => [2, 3, 4],
 				];
-			}
+			}*/
 		}
 
 		foreach ($users as $user)
@@ -47,7 +54,7 @@ class UserSeeder extends Seeder {
 			unset($user['access']);
 
 			// Create the user
-			$user = UserModel::create($user);
+			$user = User::create($user);
 
 			// Attach the role(s)
 			$user->roles()->sync($access);

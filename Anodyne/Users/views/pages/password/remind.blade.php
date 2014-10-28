@@ -11,6 +11,8 @@
 
 			<p>To reset your password, enter your email address below. You'll be sent an email with a confirmation link where you'll be able to set your new password.</p>
 
+			<hr class="partial-split">
+
 			{{ Form::open(['route' => 'password.remind.do']) }}
 				<div class="row">
 					<div class="col-xs-12">

@@ -40,20 +40,20 @@
 					<div class="visible-xs visible-sm">
 						<div class="row">
 							<div class="col-sm-6">
-								<p><a href="{{ route('admin.permissions.edit', [$permission->id]) }}" class="btn btn-lg btn-block btn-default">{{ $_icons['edit'] }}</a></p>
+								<p><a href="{{ route('admin.permissions.edit', [$permission->id]) }}" class="btn btn-lg btn-block btn-default">Edit</a></p>
 							</div>
 							<div class="col-sm-6">
-								<p><a href="#" class="btn btn-lg btn-block btn-danger js-permission-action" data-action="delete" data-id="{{ $permission->id }}">{{ $_icons['remove'] }}</a></p>
+								<p><a href="#" class="btn btn-lg btn-block btn-danger js-permission-action" data-action="delete" data-id="{{ $permission->id }}">Remove</a></p>
 							</div>
 						</div>
 					</div>
 					<div class="visible-md visible-lg">
 						<div class="btn-toolbar pull-right">
 							<div class="btn-group">
-								<a href="{{ route('admin.permissions.edit', [$permission->id]) }}" class="btn btn-default">{{ $_icons['edit'] }}</a>
+								<a href="{{ route('admin.permissions.edit', [$permission->id]) }}" class="btn btn-default">Edit</a>
 							</div>
 							<div class="btn-group">
-								<a href="#" class="btn btn-danger js-permission-action" data-action="delete" data-id="{{ $permission->id }}">{{ $_icons['remove'] }}</a>
+								<a href="#" class="btn btn-danger js-permission-action" data-action="delete" data-id="{{ $permission->id }}">Remove</a>
 							</div>
 						</div>
 					</div>

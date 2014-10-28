@@ -1,10 +1,8 @@
 <?php namespace Anodyne\Users\Mailers;
 
-use HTML,
-	Config,
-	BaseMailer;
+use Config;
 
-class UserMailer extends BaseMailer {
+class UserMailer extends \BaseMailer {
 
 	public function created($user, $data)
 	{

@@ -34,7 +34,7 @@
 					<div class="form-group">
 						<label class="control-label">Message</label>
 						{{ Form::textarea('message', null, ['rows' => 5, 'class' => 'form-control']) }}
-						<p class="help-block">Parsed as Markdown</p>
+						<p class="help-block">{{ $_icons['markdown'] }} Parsed as Markdown</p>
 					</div>
 				</div>
 			</div>

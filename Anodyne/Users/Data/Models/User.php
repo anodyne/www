@@ -1,8 +1,6 @@
-<?php namespace Anodyne\Users\Data\Models\Eloquent;
+<?php namespace Anodyne\Users\Data\Models;
 
-use Str,
-	Hash,
-	Config,
+use Config,
 	SoftDeletingTrait;
 use Zizaco\Entrust\HasRole;
 use Illuminate\Auth\UserTrait,
@@ -11,7 +9,7 @@ use Illuminate\Auth\UserTrait,
 	Illuminate\Auth\Reminders\RemindableInterface;
 use Laracasts\Presenter\PresentableTrait;
 
-class UserModel extends \Model implements UserInterface, RemindableInterface {
+class User extends \Model implements UserInterface, RemindableInterface {
 
 	use HasRole;
 	use UserTrait;
@@ -30,9 +28,16 @@ class UserModel extends \Model implements UserInterface, RemindableInterface {
 
 	protected $presenter = 'Anodyne\Users\Data\Presenters\UserPresenter';
 
-	// Hash the password automatically
-	public static $passwordAttributes  = ['password'];
-	public $autoHashPasswordAttributes = true;
+	/*
+	|--------------------------------------------------------------------------
+	| Accessors/Mutators
+	|--------------------------------------------------------------------------
+	*/
+
+	public function setPasswordAttribute($value)
+	{
+		$this->attributes['password'] = \Hash::make($value);
+	}
 
 	/*
 	|--------------------------------------------------------------------------

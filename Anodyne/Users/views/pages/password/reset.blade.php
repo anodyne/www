@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="form-group">
-							<label class="control-label">Password</label>
+							<label class="control-label">New Password</label>
 							{{ Form::password('password', array('class' => 'form-control input-lg')) }}
 						</div>
 					</div>
@@ -31,7 +31,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="form-group">
-							<label class="control-label">Confirm Password</label>
+							<label class="control-label">Confirm New Password</label>
 							{{ Form::password('password_confirmation', array('class' => 'form-control input-lg')) }}
 						</div>
 					</div>

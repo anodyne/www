@@ -6,8 +6,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="Anodyne Productions">
 		<meta name="viewport" content="width=device-width">
-		<link rel="icon" type="image/x-icon" href="favicon.ico?v2">
-		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico?v1') }}">
+		<link rel="apple-touch-icon-precomposed" href="{{ asset('apple-touch-icon.png') }}">
 
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="js/html5shiv.js"></script>
@@ -35,7 +35,7 @@
 			<section>
 				<div class="container">
 					@if (Session::has('flash.message'))
-						@include('partials.alert')
+						@include('partials.flash')
 					@endif
 					
 					@yield('content')

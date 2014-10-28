@@ -55,7 +55,7 @@ class LoginController extends \BaseController {
 		// Set a flash message
 		Flash::error("Either your email address or password were incorrect. Please try again.");
 
-		return Redirect::route('login')->withInput();
+		return Redirect::route('login');
 	}
 
 	public function logout()

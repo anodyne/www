@@ -10,10 +10,10 @@
 			</div>
 			<div class="col-sm-3 col-md-2">
 				<ul class="list-unstyled">
+					<li><a href="{{ route('home') }}">Home</a></li>
 					<li><a href="{{ route('nova.home') }}">Nova</a></li>
 					<li><a href="http://forums.anodyne-productions.com">Forums</a></li>
 					<li><a href="http://xtras.anodyne-productions.com">AnodyneXtras</a></li>
-					<li><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></li>
 					<li><a href="#" class="js-contact">Contact</a></li>
 				</ul>
 			</div>
