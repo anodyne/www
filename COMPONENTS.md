@@ -5,9 +5,9 @@
 - [Laravel](http://laravel.com)
 	- Version: 4.2.11
 - [Flysystem](http://flysystem.thephpleague.com/)
-	- Version: 0.5.9
+	- Version: 0.5.10
 - [Parsedown](http://parsedown.org/)
-	- Version: 1.1.0
+	- Version: 1.1.1
 - [Browser](https://github.com/Ikimea/Browser)
 	- Version: 1.11
 - [Presenter](https://github.com/laracasts/Presenter)
