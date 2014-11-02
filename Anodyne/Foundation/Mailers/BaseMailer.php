@@ -6,7 +6,7 @@ abstract class BaseMailer {
 
 	public function send($view, array $data)
 	{
-		return Mail::queue("emails.{$view}", $data, function($msg) use ($data)
+		return Mail::send("emails.{$view}", $data, function($msg) use ($data)
 		{
 			// Set the TO
 			if (array_key_exists('to', $data))
