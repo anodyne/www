@@ -54,7 +54,7 @@
 
 			table {
 				width: 90%;
-				margin: 30px auto;
+				margin: 15px auto;
 			}
 			table thead tr td {
 				height: 90px;
