@@ -53,7 +53,7 @@
 			}
 
 			table {
-				width: 75%;
+				width: 90%;
 				margin: 30px auto;
 			}
 			table thead tr td {

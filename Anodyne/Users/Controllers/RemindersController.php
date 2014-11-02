@@ -19,7 +19,12 @@ class RemindersController extends BaseController {
 
 	public function doRemind()
 	{
-		switch ($response = Password::remind(Input::only('email')))
+		$response = Password::remind(Input::only('email'), function($message)
+		{
+			$message->subject("[Anodyne Productions] Your Password Reset Link");
+		});
+
+		switch ($response)
 		{
 			case Password::INVALID_USER:
 				Flash::error(Lang::get($response));
