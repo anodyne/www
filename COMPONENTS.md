@@ -28,7 +28,7 @@
 - [jQuery](http://jquery.com/)
 	- Version: 1.11.1 (IE < 9), 2.1.1
 - [Bootstrap](http://getbootstrap.com)
-	- Version: 3.2.0
+	- Version: 3.3.0
 - [jQuery Validate](http://jqueryvalidation.org/)
 	- Version: 1.13.0
 - [HTML5Shiv](https://code.google.com/p/html5shiv/)
