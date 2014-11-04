@@ -27,17 +27,19 @@
 		{{ HTML::style('css/fonts.css') }}
 	</head>
 	<body>
-		{{ View::make('partials.nav-global')->withActive('nova') }}
+		<div class="wrapper">
+			{{ View::make('partials.nav-global')->withActive('nova') }}
 
-		{{ View::make('partials.header')->withType('nova') }}
+			{{ View::make('partials.header')->withType('nova') }}
 		
-		<section>
-			<div class="container">
-				@yield('content')
-			</div>
-		</section>
+			<section>
+				<div class="container">
+					@yield('content')
+				</div>
+			</section>
 		
-		@include('partials.footer')
+			@include('partials.footer')
+		</div>
 
 		{{ modal(['id' => 'contactModal', 'header' => "Contact Anodyne"]) }}
 		@yield('modals')

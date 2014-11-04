@@ -4,6 +4,8 @@
 
 html,
 body {
+	margin: 0;
+	padding: 0;
 	height: 100%;
 }
 body {
@@ -19,9 +21,7 @@ body {
 
 .wrapper {
 	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -@footer-height;
+	position: relative;
 }
 
 nav.nav-global {
@@ -195,7 +195,7 @@ header {
 }
 
 section {
-	margin: @spacing 0;
+	padding: @spacing 0 @footer-height;
 
 	a  {
 		outline: none;
@@ -326,10 +326,12 @@ section {
 	}
 }
 
-footer, .push {
-	height: @footer-height;
-}
 footer {
+	width: 100%;
+	height: @footer-height;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	padding: @spacing 0;
 
 	background: @color-nav-main;
