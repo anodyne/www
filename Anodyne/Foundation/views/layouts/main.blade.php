@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>@yield('title') &bull; Anodyne Productions</title>
 		<meta name="description" content="">
+		<meta name="description" content="Anodyne Productions specializes in RPG management software and tools to help game masters play and run their games with powerful and easy-to-use software.">
 		<meta name="author" content="Anodyne Productions">
 		<meta name="viewport" content="width=device-width">
 		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico?v1') }}">
@@ -13,14 +14,7 @@
 		<script type="text/javascript" src="js/html5shiv.js"></script>
 		<![endif]-->
 		
-		@if (App::environment() == 'production')
-			<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
-			<link href="//fonts.googleapis.com/css?family=Bitter:700" rel="stylesheet">
-			<link href="//fonts.googleapis.com/css?family=Exo+2:500,500italic,600,600italic" rel="stylesheet">
-			<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-		@else
-			<link href="//localhost/global/bootstrap/3.3/css/bootstrap.min.css" rel="stylesheet">
-		@endif
+		{{ partial('global_styles') }}
 		{{ HTML::style('css/base.css') }}
 		{{ HTML::style('css/main.css') }}
 		{{ HTML::style('css/responsive.css') }}
@@ -53,22 +47,7 @@
 
 		@yield('modals')
 		
-		@if (App::environment() == 'production')
-			<!--[if lt IE 9]>
-				<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-			<![endif]-->
-			<!--[if gte IE 9]><!-->
-				<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-			<!--<![endif]-->
-			<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-			<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-			<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
-		@else
-			<script src="//localhost/global/jquery/jquery-2.1.1.min.js"></script>
-			<script src="//localhost/global/bootstrap/3.3/js/bootstrap.min.js"></script>
-			<script src="//localhost/global/jquery.validate/1.13/jquery.validate.min.js"></script>
-			<script src="//localhost/global/jquery.validate/1.13/additional-methods.min.js"></script>
-		@endif
+		{{ partial('global_scripts') }}
 		<script>
 			// Destroy all modals when they're hidden
 			$('.modal').on('hidden.bs.modal', function()
