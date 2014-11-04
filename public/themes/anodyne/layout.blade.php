@@ -34,11 +34,9 @@
 				</div>
 			</section>
 
-			<div class="push"></div>
+			@include('partials.footer')
 		</div>
 
-		@include('partials.footer')
-		
 		<div id="contactModal" class="modal fade">
 			<div class="modal-dialog">
 				<div class="modal-content"></div>
