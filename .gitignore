@@ -11,3 +11,5 @@ vendor
 
 app/config/packages/barryvdh/*
 app/storage/debugbar/
+
+public/assets/nova
