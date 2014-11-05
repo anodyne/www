@@ -21,8 +21,8 @@
 				<ul>
 					<li><a href="{{ route('home') }}">Anodyne</a></li>
 					<li><a href="{{ route('nova.home') }}">Nova</a></li>
-					<li><a href="http://xtras.anodyne-productions.com">Xtras</a></li>
-					<li><a href="http://forums.anodyne-productions.com">Forums</a></li>
+					<li><a href="{{ Config::get('anodyne.links.xtras') }}">Xtras</a></li>
+					<li><a href="{{ Config::get('anodyne.links.forums') }}">Forums</a></li>
 					<li><a href="#" class="js-contact">Contact</a></li>
 					<li><a href="{{ route('register') }}">Register</a></li>
 					<li><a href="{{ route('login') }}">Log In</a></li>
@@ -75,8 +75,8 @@
 		<ul>
 			<li><a href="{{ route('home') }}"{{ ($active == 'main') ? ' class="active"' : '' }}>Anodyne<div class="arrow"></div></a></li>
 			<li><a href="{{ route('nova.home') }}"{{ ($active == 'nova') ? ' class="active"' : '' }}>Nova<div class="arrow"></div></a></li>
-			<li><a href="http://xtras.anodyne-productions.com">Xtras<div class="arrow"></div></a></li>
-			<li><a href="http://forums.anodyne-productions.com">Forums<div class="arrow"></div></a></li>
+			<li><a href="{{ Config::get('anodyne.links.xtras') }}">Xtras<div class="arrow"></div></a></li>
+			<li><a href="{{ Config::get('anodyne.links.forums') }}">Forums<div class="arrow"></div></a></li>
 			<!--<li><a href="http://help.anodyne-productions.com">Help<div class="arrow"></div></a></li>
 			<li><a href="http://learn.anodyne-productions.com">Learn<div class="arrow"></div></a></li>-->
 			<li class="visible-sm"><a href="#" class="js-contact">Contact</a></li>
