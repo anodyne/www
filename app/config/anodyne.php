@@ -2,6 +2,15 @@
 
 return [
 
+	'email' => [
+
+		'address'	=> 'contact@anodyne-productions.com',
+		'name'		=> 'Anodyne Productions',
+
+		'subject'	=> "[Anodyne Site Contact]",
+
+	],
+
 	'links' => [
 
 		'forums'	=> 'http://forums.anodyne-productions.com/',
