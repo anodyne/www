@@ -26,9 +26,7 @@
 		],
 
 		"psr-4": {
-			"Anodyne\\": "Anodyne\\Web\\",
-			"Anodyne\\Extensions\\": "Anodyne\\Extensions\\",
-			"Anodyne\\Foundation\\": "Anodyne\\Foundation\\",
+			"Anodyne\\": "Anodyne\\Site\\",
 			"Anodyne\\Users\\": "Anodyne\\Users\\"
 		}
 	},

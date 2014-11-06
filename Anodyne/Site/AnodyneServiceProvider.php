@@ -1,6 +1,6 @@
-<?php namespace Anodyne\Foundation;
+<?php namespace Anodyne;
 
-use App, Config, View;
+use App, Auth, View, Config;
 use Ikimea\Browser\Browser;
 use League\Flysystem\Filesystem,
 	League\Flysystem\Adapter\Local;
@@ -88,7 +88,7 @@ class AnodyneServiceProvider extends ServiceProvider {
 	protected function setupBindings()
 	{
 		// Make sure we some variables available on all views
-		View::share('_currentUser', \Auth::user());
+		View::share('_currentUser', Auth::user());
 		View::share('_icons', Config::get('icons'));
 	}
 

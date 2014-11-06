@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation;
+<?php namespace Anodyne;
 
 use Route;
 use Illuminate\Support\ServiceProvider;

@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation\Controllers;
+<?php namespace Anodyne\Controllers;
 
 use Log,
 	Auth,

@@ -127,7 +127,7 @@
 	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
 
 	<dl>
-		<dt><a href="{{ Config::get('anodyne.links.forums') }}">The Forums</a></dt>
+		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
 		
 		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>

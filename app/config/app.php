@@ -111,8 +111,8 @@ return array(
 
 		'Zizaco\Entrust\EntrustServiceProvider',
 		'Wardrobe\Core\WardrobeServiceProvider',
-		'Anodyne\Foundation\AnodyneServiceProvider',
-		'Anodyne\Foundation\AnodyneRoutingServiceProvider',
+		'Anodyne\AnodyneServiceProvider',
+		'Anodyne\AnodyneRoutingServiceProvider',
 		'Anodyne\Users\AnodyneUsersServiceProvider',
 
 	),
@@ -185,14 +185,14 @@ return array(
 		/**
 		 * Classes
 		 */
-		'BaseController'	=> 'Anodyne\Foundation\Controllers\BaseController',
+		'BaseController'	=> 'Anodyne\Controllers\BaseController',
 		'Browser'			=> 'Ikimea\Browser\Browser',
 		'Date'				=> 'Carbon\Carbon',
-		'Flash'				=> 'Anodyne\Foundation\Facades\FlashFacade',
-		'Github'			=> 'Anodyne\Foundation\Facades\GithubFacade',
-		'Markdown'			=> 'Anodyne\Foundation\Facades\MarkdownFacade',
-		'Model'				=> 'Anodyne\Extensions\Laravel\Database\Eloquent\Model',
-		'Roles'				=> 'Anodyne\Foundation\Services\RolesService',
+		'Flash'				=> 'Anodyne\Facades\FlashFacade',
+		'Github'			=> 'Anodyne\Facades\GithubFacade',
+		'Markdown'			=> 'Anodyne\Facades\MarkdownFacade',
+		'Model'				=> 'Anodyne\Model',
+		'Roles'				=> 'Anodyne\Services\RolesService',
 		'Wardrobe'			=> 'Wardrobe\Core\Facades\WardrobeFacade',
 
 		/**
@@ -219,7 +219,7 @@ return array(
 		/**
 		 * Mailers
 		 */
-		'BaseMailer'	=> 'Anodyne\Foundation\Mailers\BaseMailer',
+		'BaseMailer'	=> 'Anodyne\Mailers\BaseMailer',
 		'UserMailer'	=> 'Anodyne\Users\Mailers\UserMailer',
 
 	),
