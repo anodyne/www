@@ -63,10 +63,10 @@ class MainController extends \BaseController {
 
 			Mail::send('emails.contact', $data, function($msg) use ($data)
 			{
-				$msg->to("admin@anodyne-productions.com", "Anodyne Productions")
+				$msg->to(config('anodyne.email.address'), config('anodyne.email.name'))
 					->from($data['email'], $data['name'])
 					->replyTo($data['email'], $data['name'])
-					->subject("[Anodyne Site Contact] {$data['name']}");
+					->subject(config('anodyne.email.subject')." {$data['name']}");
 			});
 		}
 	}

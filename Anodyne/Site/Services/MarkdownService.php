@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation\Services;
+<?php namespace Anodyne\Services;
 
 use Parsedown;
 

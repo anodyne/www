@@ -28,7 +28,7 @@
 			<div class="well">
 				<h2 class="text-center">AnodyneXtras</h2>
 				<p>Looking for a new skin for your sim? Need a MOD to do something special? AnodyneXtras is your one-stop-shop for all Nova content.</p>
-				<p><a href="{{ Config::get('anodyne.links.xtras') }}" class="btn btn-primary btn-lg btn-block">Explore Xtras</a></p>
+				<p><a href="{{ config('anodyne.links.xtras') }}" class="btn btn-primary btn-lg btn-block">Explore Xtras</a></p>
 			</div>
 		</div>
 
@@ -36,7 +36,7 @@
 			<div class="well">
 				<h2 class="text-center">Forums</h2>
 				<p>Everything from how to do something in Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
-				<p><a href="{{ Config::get('anodyne.links.forums') }}" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
+				<p><a href="{{ config('anodyne.links.forums') }}" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
 			</div>
 		</div>
 	</div>
@@ -91,7 +91,7 @@
 	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
 
 	<dl>
-		<dt><a href="{{ Config::get('anodyne.links.forums') }}">The Forums</a></dt>
+		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
 		
 		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>

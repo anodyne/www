@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation\Facades;
+<?php namespace Anodyne\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

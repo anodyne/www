@@ -1,8 +1,8 @@
-<?php namespace Anodyne\Extensions\Laravel\Database\Eloquent;
+<?php namespace Anodyne;
 
-use Date;
+use Date, Eloquent;
 
-abstract class Model extends \Eloquent {
+abstract class Model extends Eloquent {
 	
 	/*
 	|--------------------------------------------------------------------------

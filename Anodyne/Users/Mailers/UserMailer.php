@@ -8,7 +8,7 @@ class UserMailer extends \BaseMailer {
 	{
 		$emailData = [
 			'subject' => "User Account Created",
-			'replyTo' => Config::get('mail.from.address'),
+			'replyTo' => config('mail.from.address'),
 			'to' => $user->present()->email,
 			'email' => $user->present()->email,
 			'password' => $data['password'],
@@ -21,7 +21,7 @@ class UserMailer extends \BaseMailer {
 	{
 		$emailData = [
 			'subject' => "Welcome to Anodyne Productions",
-			'replyTo' => Config::get('mail.from.address'),
+			'replyTo' => config('mail.from.address'),
 			'to' => $user->present()->email,
 		];
 

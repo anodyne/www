@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation\Services;
+<?php namespace Anodyne\Services;
 
 class RolesService {
 
@@ -10,6 +10,7 @@ class RolesService {
 	const HELP_ADMINISTRATOR	= 6;
 	const HELP_AUTHOR			= 7;
 	const USERS_ADMINISTRATOR	= 8;
+	const SUSPENDED_USER		= 9;
 
 	/**
 	 * Define what roles should be given to new users when they register for

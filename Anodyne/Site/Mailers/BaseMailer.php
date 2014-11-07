@@ -1,4 +1,4 @@
-<?php namespace Anodyne\Foundation\Mailers;
+<?php namespace Anodyne\Mailers;
 
 use Mail;
 
