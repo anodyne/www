@@ -33,12 +33,14 @@ class RegistrationController extends \BaseController {
 		// Setup the validator
 		$validator = \Validator::make(Input::all(), [
 			'name'				=> 'required',
+			'username'			=> 'required|unique:users,username',
 			'email'				=> 'required|email|unique:users,email',
 			'password'			=> 'required',
 			'password_confirm'	=> 'required|same:password',
 			'confirm'			=> 'required'
 		], [
-			'email.unique'		=> "The email address you entered is already registered. You can <a href='".route('home')."'>log in</a>, or, if you've forgotten your password, you can reset it from the <a href='".route('password.remind')."'>Reset Password</a> page.",
+			'username.unique'	=> "Someone has already registered that username",
+			'email.unique'		=> "The email address you entered is already registered. If this is your account, you can <a href='".route('home')."'>log in</a>, or, if you've forgotten your password, you can reset it from the <a href='".route('password.remind')."'>Reset Password</a> page.",
 		]);
 
 		if ( ! $validator->passes())
