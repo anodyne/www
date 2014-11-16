@@ -21,7 +21,7 @@
 - [Wardrobe Core](https://github.com/wardrobecms/core)
 	- Version: 1.2.0
 - [Gravatar](https://github.com/forxer/gravatar)
-	- Version: 1.2.0
+	- Version: 1.2.1
 
 ## Javascript
 
