@@ -57,7 +57,7 @@ class AnodyneServiceProvider extends ServiceProvider {
 	{
 		$this->app['markdown'] = $this->app->share(function($app)
 		{
-			return new Services\MarkdownService(new \Parsedown);
+			return new Services\MarkdownService(new \ParsedownExtra);
 		});
 	}
 
