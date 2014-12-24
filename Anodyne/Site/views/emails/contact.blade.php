@@ -6,6 +6,6 @@
 	<body>
 		<h1>{{ $subject }}</h1>
 		
-		{{ $message }}
+		{{ $content }}
 	</body>
 </html>
