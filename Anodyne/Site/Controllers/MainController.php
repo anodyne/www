@@ -58,7 +58,7 @@ class MainController extends \BaseController {
 				'subject'	=> Input::get('subject'),
 				'name'		=> Input::get('name'),
 				'email'		=> Input::get('email'),
-				'message'	=> Markdown::parse(Input::get('message')),
+				'content'	=> Markdown::parse(Input::get('message')),
 			];
 
 			Mail::send('emails.contact', $data, function($msg) use ($data)
