@@ -90,17 +90,16 @@
 
 			font-size: 26px;
 			text-align: center;
+			height: auto;
 		}
 
 		nav.nav-main {
 			width: 100%;
-			margin-top: @spacing + 9px;
+			margin-top: @spacing;
 			margin-bottom: @spacing;
 
-			background: @color-gray-light;
-			border: 1px solid rgba(0, 0, 0, .1);
-
-			.rounded(@border-radius);
+			background: transparent;
+			border: none;
 
 			ul {
 				li {
@@ -112,12 +111,6 @@
 
 					a {
 						line-height: 2.5;
-
-						color: @color-gray-dark;
-
-						&:hover {
-							color: @color-dark;
-						}
 					}
 				}
 			}
@@ -125,6 +118,8 @@
 	}
 
 	section {
+		padding-bottom: @spacing;
+		
 		h1 {
 			text-align: center;
 		}
@@ -141,6 +136,7 @@
 
 	footer {
 		height: auto;
+		display: none;
 
 		h2 {
 			text-align: center;

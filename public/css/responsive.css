@@ -1,1 +1,98 @@
-@media (max-width:1199px){header .brand{font-size:28px}}@media (min-width:768px) and (max-width:991px){nav.nav-main{height:50px;line-height:50px}nav.nav-main ul li a{text-align:center;font-size:16px}header .brand{font-size:24px}}@media (max-width:767px){nav.nav-global ul li{width:100%;text-align:center}nav.nav-global ul li a.active{background:none}nav.nav-global ul li a .arrow{border-left:1px solid rgba(0,0,0,0.2);border-top:1px solid rgba(0,0,0,0.2);background:#252728}#navGlobalMobile ul{margin:0;padding:0}#navGlobalMobile ul li{margin:0 0 15px 0;padding:0;text-align:center;list-style:none}#navGlobalMobile ul li a{font-family:"Exo 2",helvetica,arial,sans-serif;font-size:20px;font-style:italic}header .brand{display:block;font-size:26px;text-align:center}header nav.nav-main{width:100%;margin-top:24px;margin-bottom:15px;background:#ddd;border:1px solid rgba(0,0,0,0.1);-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px 5px 5px 5px}header nav.nav-main ul li{display:block;margin:0;float:none;text-align:center}header nav.nav-main ul li a{line-height:2.5;color:#666}header nav.nav-main ul li a:hover{color:#444}section h1{text-align:center}section .news-title{text-align:center}section .news-title small{display:block;line-height:1.75}footer{height:auto}footer h2{text-align:center}footer ul.list-unstyled li{margin:5px 0;text-align:center;font-size:16px}}
+/* Styles common to xs, sm, and md */
+@media (max-width: 1199px) {
+  header .brand {
+    font-size: 28px;
+  }
+}
+/* Styles common xs and sm */
+/* Styles for sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  nav.nav-main {
+    height: 50px;
+    line-height: 50px;
+  }
+  nav.nav-main ul li a {
+    text-align: center;
+    font-size: 16px;
+  }
+  header .brand {
+    font-size: 24px;
+  }
+}
+/* Styles for xs */
+@media (max-width: 767px) {
+  nav.nav-global ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav.nav-global ul li a.active {
+    background: none;
+  }
+  nav.nav-global ul li a .arrow {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background: #252728;
+  }
+  #navGlobalMobile ul {
+    margin: 0;
+    padding: 0;
+  }
+  #navGlobalMobile ul li {
+    margin: 0 0 15px 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+  #navGlobalMobile ul li a {
+    font-family: "Exo 2", helvetica, arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+  }
+  header .brand {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    height: auto;
+  }
+  header nav.nav-main {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+  }
+  header nav.nav-main ul li {
+    display: block;
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+  header nav.nav-main ul li a {
+    line-height: 2.5;
+  }
+  section {
+    padding-bottom: 15px;
+  }
+  section h1 {
+    text-align: center;
+  }
+  section .news-title {
+    text-align: center;
+  }
+  section .news-title small {
+    display: block;
+    line-height: 1.75;
+  }
+  footer {
+    height: auto;
+    display: none;
+  }
+  footer h2 {
+    text-align: center;
+  }
+  footer ul.list-unstyled li {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+}
