@@ -48,6 +48,9 @@
     font-size: 20px;
     font-style: italic;
   }
+  header {
+    height: auto;
+  }
   header .brand {
     display: block;
     font-size: 26px;
