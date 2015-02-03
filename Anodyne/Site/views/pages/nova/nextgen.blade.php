@@ -11,8 +11,8 @@
 		<div class="col-md-9">
 			<ul class="nav nav-tabs">
 				<li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
-				<li><a href="#vision" data-toggle="tab">Our Vision</a></li>
-				<li><a href="#installing" data-toggle="tab">Installing Preview Release 1</a></li>
+				<li><a href="#vision" data-toggle="tab">The Vision</a></li>
+				<li><a href="#installing" data-toggle="tab">Installing the Preview Release</a></li>
 			</ul>
 
 			<div class="tab-content">
@@ -23,26 +23,84 @@
 				</div>
 
 				<div id="vision" class="tab-pane">
-					
+					<dl>
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-change-is-coming">Change Is Coming</a></dt>
+						<dd>Major versions are a necessity, but why do we make a bigger deal out of major releases?</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-a-new-foundation">A New Foundation</a></dt>
+						<dd>For years, Nova has been built on top of CodeIgniter, but that's changing. Learn about Nova's new foundation.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-nova-is-broken">Nova Is Broken</a></dt>
+						<dd>Not just missing features, but the very philosophy Nova is developed with is out-dated and broken. Let's fix it.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-a-new-file-structure">A New File Structure</a></dt>
+						<dd>Let's talk about a new look to the file structure of Nova and how it'll make things easier for everyone.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-site-themes">Site Themes</a></dt>
+						<dd>The way themeing works in NextGen will be very different from other versions of Nova. Find out more.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-application-review-center">Application Review Center</a></dt>
+						<dd>We're social with everything else, so why not application review too? Find out more about Nova's social application review feature.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-manifests">Manifests</a></dt>
+						<dd>Gone are the days of rigid manifests that you have no control over. Borrowing an idea from Microsoft SharePoint, you can build your manifests to show what you want.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-access-control">Access Control</a></dt>
+						<dd>Control what people can and can't do even better than before.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-ranks-redux">Ranks Redux</a></dt>
+						<dd>Ranks have been in need of a total rebuild for years. This new way of handling ranks is easy and powerful.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-dynamic-forms-2-0">Dynamic Forms 2.0</a></dt>
+						<dd>Dynamic forms have been awesome in Nova, but we want them to be even better.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-pages">Pages</a></dt>
+						<dd>A dynamic and robust system needs an equally dynamic and robust page system so you can create and manage pages without using code.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-storytelling">Storytelling</a></dt>
+						<dd>Missions, mission posts, and personal logs are going away. Learn about one of Nova NextGen's pillar features: storytelling.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-developers">Developers</a></dt>
+						<dd>Developers will have some fun new things to play with when NextGen arrives.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-trimming-the-fat">Trimming the Fat</a></dt>
+						<dd>What doesn't get put in is almost more important than what does get put in. Lots of stuff is coming out. Find out more.</dd>
+
+						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-whats-next">What's Next?</a></dt>
+					</dl>
 				</div>
 
 				<div id="installing" class="tab-pane">
-					
+					{{ alert('warning', "Nova NextGen is provided \"as-is\" and doesn't have any support for it. You're free to ask questions in the forums, but understand that Anodyne will not provide walkthroughs and support for Nova NextGen at this time.") }}
+
+					<p>Nova NextGen can be run from any web server running PHP 5.4 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
+
+					<ol>
+						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
+						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
+						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code> and <code>storage</code> directories (as well as all their sub-directories) writable by the web server (777).</li>
+						<li>Select the option to do a Fresh Install of Nova NextGen and follow the prompts</li>
+					</ol>
+
+					<p>Once Nova NextGen is installed, you'll be presented with a white screen with the words "#NovaNextGen" on it. That's as far as Preview Release 1 goes. In future preview releases, you'll be able to use more of the system as it's built.</p>
+
+					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
+
+					<p><em>Extension developers:</em> There hasn't been any work done on extensions yet, but in future preview releases we'll have more stuff for you to play with.</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="col-md-3">
-			{{ alert('warning', "Nova NextGen is not suitable for running a live site. This meant as a way to check out what's coming in the next version of Nova.") }}
-
 			<p><a href="#" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 1</a></p>
 
-			<h3>What's in PR1</h3>
+			<h3>What's in PR1?</h3>
 
 			<ul>
 				<li class="text-sm">Basic technology stack</li>
 				<li class="text-sm">Application architecture</li>
 				<li class="text-sm">Foundational elements</li>
+				<li class="text-sm">Basic themeing elements</li>
 				<li class="text-sm">Setup Center
 					<ul>
 						<li class="text-sm">Fresh install</li>
@@ -54,6 +112,8 @@
 			<h3>Coming in PR2</h3>
 
 			<ul>
+				<li class="text-sm">Logging in and resetting passwords</li>
+				<li class="text-sm">Basic admin control panel</li>
 				<li class="text-sm">Page Manager
 					<ul>
 						<li class="text-sm">Basic page info</li>
