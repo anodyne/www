@@ -15,7 +15,7 @@
 			<li class="visible-md visible-lg"><a href="{{ route('nova.home') }}#download">Download</a></li>
 			<!--<li><a href="{{ route('nova.home') }}#start">Getting Started</a></li>-->
 			<li><a href="{{ route('nova.home') }}#help">Help</a></li>
-			<!--<li><a href="{{ route('nova.nextgen') }}">Nova NextGen</a></li>-->
+			<li><a href="{{ route('nova.nextgen') }}">Nova NextGen</a></li>
 		@endif
 	</ul>
 </nav>
