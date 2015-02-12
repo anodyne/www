@@ -92,7 +92,7 @@
 		</div>
 
 		<div class="col-md-3">
-			<p><a href="#" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 1</a></p>
+			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-1.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 1</a></p>
 
 			<h3>What's in PR1?</h3>
 
@@ -118,10 +118,9 @@
 					<ul>
 						<li class="text-sm">Basic page info</li>
 						<li class="text-sm">Page content</li>
-						<li class="text-sm">Site navigation</li>
-						<li class="text-sm">Page collections</li>
 					</ul>
 				</li>
+				<li class="text-sm">Menu Manager</li>
 			</ul>
 		</div>
 	</div>
