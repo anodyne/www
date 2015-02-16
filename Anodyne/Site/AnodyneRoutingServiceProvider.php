@@ -9,6 +9,7 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 	{
 		$this->mainRoutes();
 		$this->novaRoutes();
+		//$this->redirectedRoutes();
 	}
 
 	public function boot()
@@ -59,6 +60,15 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 				'as'	=> 'nova.nextgen',
 				'uses'	=> 'NovaController@nextgen']);
 		});
+	}
+
+	public function redirectedRoutes()
+	{
+		Route::get('nova/index', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/browser', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/download', 'Anodyne\Controllers\RedirectController@novaIndex');
+
+		Route::get('user', 'Anodyne\Controllers\RedirectController@homeIndex');
 	}
 
 }
