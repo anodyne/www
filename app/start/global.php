@@ -43,8 +43,17 @@ Log::useDailyFiles(storage_path().'/logs/'.$logFile);
 
 App::error(function(Exception $exception, $code)
 {
-	Log::error("URL: ".Request::instance()->fullUrl());
-	Log::error($exception);
+	if ($code == 404)
+	{
+		Log::notice("404 Not Found");
+		Log::notice("URL: ".Request::instance()->fullUrl());
+		Log::notice("Referrer: ".@$_SERVER['HTTP_REFERER']);
+	}
+	else
+	{
+		Log::error("URL: ".Request::instance()->fullUrl());
+		Log::error($exception);
+	}
 });
 
 /*

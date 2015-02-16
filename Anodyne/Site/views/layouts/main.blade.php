@@ -11,7 +11,7 @@
 		<link rel="apple-touch-icon-precomposed" href="{{ asset('apple-touch-icon.png') }}">
 
 		<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/html5shiv.js"></script>
+		{{ HTML::script('js/html5shiv.js') }}
 		<![endif]-->
 		
 		{{ partial('global_styles') }}
