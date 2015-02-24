@@ -64,9 +64,26 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 
 	public function redirectedRoutes()
 	{
+		Route::get('main/index', 'Anodyne\Controllers\RedirectController@homeIndex');
+		Route::get('main/about', 'Anodyne\Controllers\RedirectController@homeIndex');
+
+		Route::get('news/post', 'Anodyne\Controllers\RedirectController@homeIndex');
+
+		Route::get('sms/index', 'Anodyne\Controllers\RedirectController@homeIndex');
+		Route::get('sms/license', 'Anodyne\Controllers\RedirectController@homeIndex');
+		Route::get('sms/stats', 'Anodyne\Controllers\RedirectController@homeIndex');
+		Route::get('sms/support', 'Anodyne\Controllers\RedirectController@homeIndex');
+
 		Route::get('nova/index', 'Anodyne\Controllers\RedirectController@novaIndex');
 		Route::get('nova/browser', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/credits', 'Anodyne\Controllers\RedirectController@novaIndex');
 		Route::get('nova/download', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/preview', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/stats', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/whattheysaid', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/support', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/license', 'Anodyne\Controllers\RedirectController@novaIndex');
+		Route::get('nova/development', 'Anodyne\Controllers\RedirectController@novaIndex');
 
 		Route::get('user', 'Anodyne\Controllers\RedirectController@homeIndex');
 	}
