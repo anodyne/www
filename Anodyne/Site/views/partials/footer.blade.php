@@ -13,6 +13,7 @@
 					<li><a href="{{ route('home') }}">Home</a></li>
 					<li><a href="{{ route('nova.home') }}">Nova</a></li>
 					<li><a href="{{ config('anodyne.links.xtras') }}">AnodyneXtras</a></li>
+					<li><a href="{{ config('anodyne.links.help') }}">Help Center</a></li>
 					<li><a href="{{ config('anodyne.links.forums') }}">Forums</a></li>
 					<li><a href="#" class="js-contact">Contact</a></li>
 				</ul>
