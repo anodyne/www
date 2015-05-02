@@ -16,7 +16,7 @@
 	<a name="products"></a><h1>Products &amp; Services</h1>
 
 	<div class="row">
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="well">
 				<h2 class="text-center">Nova <small><?php echo $version;?></small></h2>
 				<p>Nova is an easy-to-use and powerful RPG management system to help you manage your online RPG so you can get back to playing it.</p>
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="well">
 				<h2 class="text-center">AnodyneXtras</h2>
 				<p>Looking for a new skin for your sim? Need a MOD to do something special? AnodyneXtras is your one-stop-shop for all Nova content.</p>
@@ -32,11 +32,19 @@
 			</div>
 		</div>
 
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="well">
 				<h2 class="text-center">Forums</h2>
 				<p>Everything from how to do something in Nova to skin requests and much more can be answered by our knowledgeable community members.</p>
 				<p><a href="{{ config('anodyne.links.forums') }}" class="btn btn-primary btn-lg btn-block">Hit the Forums</a></p>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="well">
+				<h2 class="text-center">Help Center</h2>
+				<p>If you're having an issue with one of our products, this is the first place to look. We've compiled FAQs and more in a simple, searchable site!</p>
+				<p><a href="{{ config('anodyne.links.help') }}" class="btn btn-primary btn-lg btn-block">Get Help</a></p>
 			</div>
 		</div>
 	</div>
@@ -91,11 +99,11 @@
 	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
 
 	<dl>
+		<dt><a href="{{ config('anodyne.links.help') }}">Anodyne Help Center</a></dt>
+		<dd>We've spent a great deal of time building an extensive knowledge base in the new Anodyne Help Center. From the Help Center, you can search through the wide array of help articles about all of our products and get the help you need.</dd>
+
 		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
-		
-		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
 		
 		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
 		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->

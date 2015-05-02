@@ -127,11 +127,11 @@
 	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
 
 	<dl>
+		<dt><a href="{{ config('anodyne.links.help') }}">Anodyne Help Center</a></dt>
+		<dd>We've spent a great deal of time building an extensive user guide for Nova in the new Anodyne Help Center. From the Help Center, you can search through the wide array of help articles about all of our products and get the help you need.</dd>
+
 		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
-		
-		<!--<dt><a href="http://help.anodyne-productions.com">Anodyne Help Center</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
 		
 		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
 		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
