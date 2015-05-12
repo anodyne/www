@@ -87,6 +87,16 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="form-group">
+					<label>Forum Signature</label>
+					{{ Form::textarea('signature', null, ['class' => 'form-control', 'rows' => 8]) }}
+					<p class="text-sm text-muted">{{ $_icons['markdown'] }} Parsed with Markdown</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
 					<label>Bio</label>
 					{{ Form::textarea('bio', null, ['class' => 'form-control', 'rows' => 8]) }}
 					<p class="text-sm text-muted">{{ $_icons['markdown'] }} Parsed with Markdown</p>

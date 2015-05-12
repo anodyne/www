@@ -20,7 +20,7 @@ class User extends \Model implements UserInterface, RemindableInterface {
 	protected $table = 'users';
 
 	protected $fillable = ['name', 'email', 'password', 'url', 'bio', 'username',
-		'twitter', 'facebook', 'google', 'remember_token'];
+		'twitter', 'facebook', 'google', 'remember_token', 'signature'];
 
 	protected $hidden = ['password', 'remember_token'];
 
