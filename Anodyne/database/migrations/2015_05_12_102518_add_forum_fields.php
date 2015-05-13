@@ -17,6 +17,12 @@ class AddForumFields extends Migration {
 			$table->bigInteger('points')->default(0)->after('url');
 			$table->text('signature')->nullable()->after('bio');
 		});
+
+		// Permissions for the forums
+
+		// Roles for the forums
+
+		// Update users with the new roles
 	}
 
 	/**
