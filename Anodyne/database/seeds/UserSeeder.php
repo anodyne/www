@@ -32,9 +32,9 @@ class UserSeeder extends Seeder {
 				'access'	=> [2, 3, 4],
 			];
 
-			/*$faker = Faker\Factory::create();
+			$faker = Faker\Factory::create();
 
-			for ($i = 1; $i <= 49; $i++)
+			for ($i = 1; $i < 99; $i++)
 			{
 				$users[] = [
 					'name' => $faker->firstName(null)." ".$faker->lastName(null),
@@ -44,7 +44,7 @@ class UserSeeder extends Seeder {
 					'username' => $faker->userName,
 					'access' => [2, 3, 4],
 				];
-			}*/
+			}
 		}
 
 		foreach ($users as $user)
