@@ -73,9 +73,10 @@
 				<div id="installing" class="tab-pane">
 					{{ alert('warning', "Nova NextGen is provided \"as-is\" and doesn't have any support for it. You're free to ask questions in the forums, but understand that Anodyne will not provide walkthroughs and support for Nova NextGen at this time.") }}
 
-					<p>Nova NextGen can be run from any web server running PHP 5.5 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
+					<p>Nova NextGen can be run from any web server running PHP 5.5.9 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
 
 					<ol>
+						<li>If you have Preview Release 1 installed, you will need to first uninstall that in order to do a fresh install of Preview Release 2</li>
 						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
 						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
 						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code>, <code>storage</code>, and <code>nova/bootstrap/cache</code> directories (as well as all their sub-directories) writable by the web server (777).</li>
@@ -84,7 +85,7 @@
 
 					<p>Once Nova NextGen is installed, you'll be re-directed to a basic front page with some links to move around a few different places in the system, including being able to log in and use some of the admin features. In future preview releases, you'll be able to use more of the system as it's built.</p>
 
-					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
+					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/resources/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
 
 					<p><em>Extension developers:</em> There hasn't been any work done on extensions yet, but in future preview releases we'll have more stuff for you to play with.</p>
 				</div>
