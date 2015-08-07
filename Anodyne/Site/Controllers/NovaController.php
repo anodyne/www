@@ -7,7 +7,7 @@ class NovaController extends \BaseController {
 	public function index()
 	{
 		// Set an initial version
-		$currentVersion = '2.3.2';
+		$currentVersion = '2.4.0';
 
 		if (App::environment() == 'production')
 		{
@@ -17,10 +17,11 @@ class NovaController extends \BaseController {
 
 		$versions = [
 			$currentVersion => $currentVersion,
-			'2.2.3' => '2.2.3',
+			'2.3.2' => '2.3.2',
+			/*'2.2.3' => '2.2.3',
 			'2.1.3' => '2.1.3',
 			'2.0.3' => '2.0.3',
-			'1.2.6' => '1.2.6',
+			'1.2.6' => '1.2.6',*/
 		];
 
 		$genres = [

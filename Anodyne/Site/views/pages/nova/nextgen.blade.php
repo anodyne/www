@@ -73,18 +73,19 @@
 				<div id="installing" class="tab-pane">
 					{{ alert('warning', "Nova NextGen is provided \"as-is\" and doesn't have any support for it. You're free to ask questions in the forums, but understand that Anodyne will not provide walkthroughs and support for Nova NextGen at this time.") }}
 
-					<p>Nova NextGen can be run from any web server running PHP 5.4 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
+					<p>Nova NextGen can be run from any web server running PHP 5.5.9 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
 
 					<ol>
+						<li>If you have Preview Release 1 installed, you will need to first uninstall that in order to do a fresh install of Preview Release 2</li>
 						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
 						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
-						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code> and <code>storage</code> directories (as well as all their sub-directories) writable by the web server (777).</li>
+						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code>, <code>storage</code>, and <code>nova/bootstrap/cache</code> directories (as well as all their sub-directories) writable by the web server (777).</li>
 						<li>Select the option to do a Fresh Install of Nova NextGen and follow the prompts</li>
 					</ol>
 
-					<p>Once Nova NextGen is installed, you'll be presented with a white screen with the words "#NovaNextGen" on it. That's as far as Preview Release 1 goes. In future preview releases, you'll be able to use more of the system as it's built.</p>
+					<p>Once Nova NextGen is installed, you'll be re-directed to a basic front page with some links to move around a few different places in the system, including being able to log in and use some of the admin features. In future preview releases, you'll be able to use more of the system as it's built.</p>
 
-					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
+					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/resources/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
 
 					<p><em>Extension developers:</em> There hasn't been any work done on extensions yet, but in future preview releases we'll have more stuff for you to play with.</p>
 				</div>
@@ -92,35 +93,32 @@
 		</div>
 
 		<div class="col-md-3">
-			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-1.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 1</a></p>
+			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-2.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 2</a></p>
 
-			<h3>What's in PR1?</h3>
+			<h3>What's in PR2?</h3>
 
 			<ul>
-				<li class="text-sm">Basic technology stack</li>
-				<li class="text-sm">Application architecture</li>
-				<li class="text-sm">Foundational elements</li>
-				<li class="text-sm">Basic themeing elements</li>
-				<li class="text-sm">Setup Center
-					<ul>
-						<li class="text-sm">Fresh install</li>
-						<li class="text-sm">Uninstall</li>
-					</ul>
-				</li>
+				<li class="text-sm text-danger"><strong>New PHP requirement: PHP 5.5</strong></li>
+				<li class="text-sm">Logging in and resetting passwords</li>
+				<li class="text-sm">Page Manager</li>
+				<li class="text-sm">Additional Page Content Manager</li>
+				<li class="text-sm">Menu Manager</li>
 			</ul>
 
-			<h3>Coming in PR2</h3>
+			<h3>Coming in PR3</h3>
 
 			<ul>
-				<li class="text-sm">Logging in and resetting passwords</li>
-				<li class="text-sm">Basic admin control panel</li>
-				<li class="text-sm">Page Manager
+				<li class="text-sm">Dynamic forms</li>
+				<li class="text-sm">Access control
 					<ul>
-						<li class="text-sm">Basic page info</li>
-						<li class="text-sm">Page content</li>
+						<li class="text-sm">Roles</li>
+						<li class="text-sm">Permissions</li>
+						<li class="text-sm">Updates to menus</li>
+						<li class="text-sm">Updates to pages</li>
 					</ul>
 				</li>
-				<li class="text-sm">Menu Manager</li>
+				<li class="text-sm">Further theme refinements for fringe cases and more advanced theme options</li>
+				<li class="text-sm">Support for classic main/sub menu navigation in themes</li>
 			</ul>
 		</div>
 	</div>

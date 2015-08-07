@@ -47,17 +47,17 @@
 
 	<hr class="partial-split">
 
-	<h2>New in Nova 2.3</h2>
+	<h2>New in Nova 2.4</h2>
 
 	<dl>
-		<dt>Character Metadata Available on Manifests</dt>
-	    <dd>Use the new character metadata setting for each manifest to tell Nova which fields to pull out of the character information and display on your manifest. You can choose as many fields as you want to display, so make the manifest show more of the information your users are looking for.</dd>
+		<dt>New Email Class</dt>
+	    <dd>With a rise in recent months of hosts having trouble handling email from Nova, we've created a new email class that's a wrapper around the popular and robust <a href="http://swiftmailer.org/" target="_blank">Swiftmailer</a> email library. There are no changes needed to start using the new class and third-party developers will find the API is almost identical to CodeIgniter's built-in email class. In addition, the updated class should allow for using third-party SMTP email delivery services more easily than in CodeIgniter's email class.</dd>
 		
-		<dt>Updates to Dynamic Forms</dt>
-	    <dd>No one likes seeing blank fields on a bio, so we've updated the dynamic forms to only display fields that have something in them. This will make your forms cleaner and easier to read, especially for entries that don't have a lot of data. We've also added a much-requested feature of being able to show inline help for forms when in create or edit mode.</dd>
+		<dt>Manifest JavaScript Updates</dt>
+	    <dd>A recent trend we've seen is people re-designing the manifest to something less traditional. We love seeing the creativity of the community, but people have run into issues with how visibility toggling has worked. To remove that stumbling block, we've tweaked how Nova handles hiding and showing pieces of the manifest to give third-party developers more freedom in playing around with the manifest.</dd>
 		
-		<dt>More Sim Stats</dt>
-	    <dd>Get a better view at the stats for your game over its entire lifetime now with the expansion of the sim stats. In addition to being able to see stats for the current and previous months, there are also new metrics for the overall lifetime of the game including total posts, average posts per month and more.</dd>
+		<dt>Bug Fixes</dt>
+	    <dd>As always, we've dug in and addressed issues that have popped up in the recent weeks and months, including issues with mission post, personal log, and news item visibility that would allow people to be able to see non-activated items.</dd>
 	</dl>
 
 	<hr class="partial-split">
