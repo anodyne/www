@@ -7,7 +7,7 @@ class NovaController extends \BaseController {
 	public function index()
 	{
 		// Set an initial version
-		$currentVersion = '2.4.0';
+		$currentVersion = '2.4.2';
 
 		if (App::environment() == 'production')
 		{
@@ -44,9 +44,7 @@ class NovaController extends \BaseController {
 			'sto'	=> "Star Trek Online",
 		];
 
-		return View::make('pages.nova.index')
-			->withGenres($genres)
-			->withVersion($currentVersion);
+		return View::make('pages.nova.index', compact('genres', 'versions'));
 	}
 
 	public function nextgen()
