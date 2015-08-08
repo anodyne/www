@@ -74,7 +74,7 @@
 					<div class="col-md-4">
 						<div class="form-group">
 							<label class="control-label">Version</label>
-							<p>{{ $version }}</p>
+							{{ Form::select('version', $versions, null, ['class' => 'form-control']) }}
 						</div>
 					</div>
 					<div class="col-md-8">
@@ -173,7 +173,7 @@
 		{
 			// Get the variables
 			var genre = $('[name="genre"]').val();
-			var version = "{{ $version }}";
+			var version = $('[name="version"] option:selected').val();
 
 			if (genre != '---')
 			{
