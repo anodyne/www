@@ -93,6 +93,8 @@
 			</div>
 		</div>
 
+		<p class="alert alert-warning"><strong>Note:</strong> There is an additional step involved in the Nova 2.4 update. Please reference the <a href="http://help.anodyne-productions.com/article/nova-2/updating-to-nova-24">Nova 2.4 Update Guide</a> for more information.</p>
+
 		<hr class="partial-split">
 	</div>
 
