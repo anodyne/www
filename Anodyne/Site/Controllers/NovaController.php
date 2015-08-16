@@ -1,6 +1,6 @@
 <?php namespace Anodyne\Controllers;
 
-use App, View, Github;
+use App, Date, View, Github;
 
 class NovaController extends \BaseController {
 
@@ -50,6 +50,22 @@ class NovaController extends \BaseController {
 	public function nextgen()
 	{
 		return View::make('pages.nova.nextgen');
+	}
+
+	public function awards($type = false)
+	{
+		$winners = [
+			'creativity' => [
+				['game' => "USS Galileo Wiki", 'url' => "http://stgalileo.com/index.php/wiki/index", 'reason' => "The crew of the Galileo dove in head first with the wiki to make it a creative and engaging database of content related to their game, complete with genre-appropriate graphics and tie-ins to their missions. Awesome work!", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
+			],
+			'technical' => [],
+			'presentation' => [
+				['game' => "USS Persephone", 'url' => "http://uss-persephone.com/index.php/main/index", 'reason' => "", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
+				['game' => "USS Highlander", 'url' => "http://uss-persephone.com/index.php/main/index", 'reason' => "", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
+			],
+		];
+
+		return View::make('pages.nova.awards', compact('type', 'winners'));
 	}
 
 }
