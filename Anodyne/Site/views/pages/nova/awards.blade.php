@@ -8,7 +8,7 @@
 	@if ( ! $type)
 		<h1>Awards</h1>
 
-		<p>Over the years, we've seen people do some incredible things with our products just with a little ingenuity and experimentation. Until now, those sites have gone unnoticed and unrecognized. We want to change that and make sure that the community can see some of the amazing things being done. To do so, we've created three different awards that we'll present to games and users from time to time to recognize their work and achievements.</p>
+		<p>Over the years, we've seen people do some incredible things with our products with just a little ingenuity and experimentation. Until now, those sites have gone unnoticed and unrecognized. We want to change that and make sure the community can see some of the amazing things being done. To do so, we've created three different awards we'll present to games and users from time to time to recognize their work and achievements.</p>
 
 		<p>Below you can see the three awards, their descriptions, and a list of all the winners and their sites. If you know of a game or user who exemplifies any of these, <a href="#" class="js-contact">drop us a note</a> and let us know!</p>
 
@@ -125,11 +125,11 @@
 			<p>{{ HTML::image('images/award-presentation.png') }}</p>
 		@endif
 
-		<h2>List of Winnters</h2>
+		<h2>List of Winners</h2>
 
 		<dl>
 		@foreach ($winners[$type] as $winner)
-			<dt>{{ link_to($winner['url'], $winner['game'], ['target' => '_blank']) }}</dt>
+			<dt>{{ link_to($winner['url'], $winner['title'], ['target' => '_blank']) }}</dt>
 			<dd>{{ $winner['reason'] }}</dd>
 			<dd class="text-sm text-muted">{{ $winner['date'] }}</dd>
 		@endforeach

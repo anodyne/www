@@ -54,15 +54,19 @@ class NovaController extends \BaseController {
 
 	public function awards($type = false)
 	{
+		$creativityFilePath = base_path('Anodyne/assets/awards-creativity.json');
+		$creativityFileContents = file_get_contents($creativityFilePath);
+
+		$presentationFilePath = base_path('Anodyne/assets/awards-presentation.json');
+		$presentationFileContents = file_get_contents($presentationFilePath);
+
+		$technicalFilePath = base_path('Anodyne/assets/awards-technical.json');
+		$technicalFileContents = file_get_contents($technicalFilePath);
+
 		$winners = [
-			'creativity' => [
-				['game' => "USS Galileo Wiki", 'url' => "http://stgalileo.com/index.php/wiki/index", 'reason' => "The crew of the Galileo dove in head first with the wiki to make it a creative and engaging database of content related to their game, complete with genre-appropriate graphics and tie-ins to their missions. Awesome work!", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
-			],
-			'technical' => [],
-			'presentation' => [
-				['game' => "USS Persephone", 'url' => "http://uss-persephone.com/index.php/main/index", 'reason' => "", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
-				['game' => "USS Highlander", 'url' => "http://uss-persephone.com/index.php/main/index", 'reason' => "", 'date' => Date::create(2015, 9, 1)->format('d F Y')],
-			],
+			'creativity' => json_decode($creativityFileContents, true),
+			'technical' => json_decode($technicalFileContents, true),
+			'presentation' => json_decode($presentationFileContents, true),
 		];
 
 		return View::make('pages.nova.awards', compact('type', 'winners'));
