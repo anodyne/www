@@ -1,7 +1,7 @@
 <header>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-5">
+			<div class="col-xs-12 col-sm-5 col-md-4">
 				@if ($type == 'main')
 					<a href="{{ route('home') }}" class="brand">Anodyne Productions</a>
 				@endif
@@ -11,7 +11,7 @@
 				@endif
 			</div>
 
-			<div class="col-xs-12 col-sm-7">
+			<div class="col-xs-12 col-sm-7 col-md-8">
 				{{ View::make('partials.nav-main')->withType($type) }}
 			</div>
 		</div>
