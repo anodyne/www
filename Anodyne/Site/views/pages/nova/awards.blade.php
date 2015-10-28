@@ -136,3 +136,7 @@
 		</dl>
 	@endif
 @stop
+
+@section('scripts')
+	{{ HTML::script('js/retina.min.js') }}
+@stop
