@@ -10,7 +10,7 @@
 
 		<p>Over the years, we've seen people do some incredible things with our products with just a little ingenuity and experimentation. Until now, those sites have gone unnoticed and unrecognized. We want to change that and make sure the community can see some of the amazing things being done. To do so, we've created three different awards we'll present to games and users from time to time to recognize their work and achievements.</p>
 
-		<p>Below you can see the three awards, their descriptions, and a list of all the winners and their sites. If you know of a game or user who exemplifies any of these, <a href="#" class="js-contact">drop us a note</a> and let us know!</p>
+		<p>Below you can see the three awards, their descriptions, and a list of all the winners and their sites. If you know of a game or user who exemplifies any of these, <a href="{{ route('nova.award-nomination') }}">nominate</a> a game or individual and let us know!</p>
 
 		<hr class="partial-split">
 
