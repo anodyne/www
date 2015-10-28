@@ -59,6 +59,18 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 			Route::get('nextgen', [
 				'as'	=> 'nova.nextgen',
 				'uses'	=> 'NovaController@nextgen']);
+
+			Route::get('awards/{type?}', [
+				'as'	=> 'nova.awards',
+				'uses'	=> 'NovaController@awards']);
+
+			Route::get('award-nomination', [
+				'as'	=> 'nova.award-nomination',
+				'uses'	=> 'NovaController@awardNomination']);
+
+			Route::post('award-nomination', [
+				'as'	=> 'nova.send-award-nomination',
+				'uses'	=> 'NovaController@sendAwardNomination']);
 		});
 	}
 

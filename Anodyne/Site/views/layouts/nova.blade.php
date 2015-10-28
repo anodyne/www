@@ -20,13 +20,17 @@
 		{{ HTML::style('css/fonts.css') }}
 	</head>
 	<body>
-		<div class="wrapper">
+		<div id="app" class="wrapper">
 			{{ View::make('partials.nav-global')->withActive('nova') }}
 
 			{{ View::make('partials.header')->withType('nova') }}
 		
 			<section>
 				<div class="container">
+					@if (Session::has('flash.message'))
+						{{ alert(Session::get('flash.level'), Session::get('flash.message')) }}
+					@endif
+
 					@yield('content')
 				</div>
 			</section>
