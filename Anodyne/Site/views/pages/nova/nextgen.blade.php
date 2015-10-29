@@ -9,17 +9,42 @@
 
 	<div class="row">
 		<div class="col-md-9">
-			<ul class="nav nav-tabs">
-				<li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
-				<li><a href="#vision" data-toggle="tab">The Vision</a></li>
-				<li><a href="#installing" data-toggle="tab">Installing the Preview Release</a></li>
+			<p>We're really excited to get Nova NextGen into your hands! However, for the sake of both of our sanities, let's make a few things clear.</p>
+
+			<ul>
+				<li><strong>This is alpha software.</strong> It has bugs, it's missing features, and things <em>will</em> break.</li>
+				<li>Upgrading from a preview release to subsequent preview releases isn't supported. You will need to do a fresh install every time a new preview release is released.</li>
+				<li>The take-home message is that <strong>you should not use this in production</strong>. These preview releases are solely intended to gather feedback from our community of users and developers.</li>
+			</ul>
+
+			<hr class="partial-split">
+
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#faq" data-toggle="pill">FAQs</a></li>
+				<li><a href="#vision" data-toggle="pill">The Vision</a></li>
+				<li><a href="#installing" data-toggle="pill">Installation</a></li>
+				<li><a href="#features" data-toggle="pill">Included Features</a></li>
 			</ul>
 
 			<div class="tab-content">
-				<div id="overview" class="tab-pane active">
-					<p>Over the last couple of years, there have been a lot of promises about the next generation of Nova, but to date, little evidence to back those promises up. The last thing we want is for this to feel like "vaporware" that we talk and talk about, but never happens. Believe us when we say, we're committed to getting the next generation of Nova into your hands, but we won't do it until we feel it's the best product it can possibly be. That involves a lot of time and effort though and we don't want to leave people empty-handed, so we've created this preview site to show you what's coming.</p>
+				<div id="faq" class="tab-pane active">
+					<h3>What Is &rdquo;Nova NextGen&ldquo;?</h3>
 
-					<p>Our development is being governed by two principles: <em>make it smarter</em> and <em>make it better</em>. Those are certainly subjective principles to be guided by, but we've come to view our role as curators of features now. Ultimately, we have the final say over what does and does not go into Nova. At the end of the day, we're the ones who have to be satisfied with the product, so our goal is to make sure that every new feature added either makes Nova smarter or better. If an existing feature doesn't meet our standards, we tear it apart and re-build it until it does, even if the end user will never notice the change. At the end of the day, it's about building a product we're proud of and something you'll love using.</p>
+					<p>There's been some confusion lately about what exactly Nova NextGen <em>is</em>.</p>
+
+					<p>Simply put, Nova NextGen is Nova 3.</p>
+
+					<p>Over the last few years, there's been a lot of talk about Nova 3. Those conversations have gone through a lot of evolutions, as has the philosophy behind Nova 3. To avoid confusion with previous talk about Nova 3, we chose the term <em>Nova NextGen</em> to highlight what our thinking on the next generation of Nova has become. This is purely a marketing term. The final release will still be Nova 3, we just wanted to differentiate what we're talking about now from what's been talked about in the past.</p>
+
+					<h3>What Are the Preview Releases?</h3>
+
+					<p>Developing software like Nova NextGen is a lengthy process that takes a lot of time and effort. We didn't want to leave people empty handed though while they waited for us to finish working. In order to get Nova NextGen (even in its early stages) into your hands, we've chosen release these preview releases to give you a preview of what's coming when Nova 3 is released.</p>
+
+					<h3>What's the Timeline for Nova 3?</h3>
+
+					<p>Our development is being governed by two principles: <em>make it smarter</em> and <em>make it better</em>. Our goal is to make sure that every new feature added either makes Nova smarter or better. If an existing feature doesn't meet that standard, we tear it apart and re-build it until it does, even if you'll never notice the change. At the end of the day, it's about building a product we're proud of and something you'll love using.</p>
+
+					<p>Believe us when we say, we're committed to getting the next generation of Nova into your hands, but we won't do it until we feel it's the best product it can possibly be. That involves a lot of time and effort, so at this stage, there is no timeline on when Nova 3 will be completed.</p>
 				</div>
 
 				<div id="vision" class="tab-pane">
@@ -89,36 +114,40 @@
 
 					<p><em>Extension developers:</em> There hasn't been any work done on extensions yet, but in future preview releases we'll have more stuff for you to play with.</p>
 				</div>
+
+				<div id="features" class="tab-pane">
+					<p class="text-muted"><em>Gray text indicates features coming in the next preview release.</em></p>
+
+					<ul>
+						<li>New application structure</li>
+						<li>New flexible and responsive themeing system</li>
+						<li>Robust extension architecture</li>
+						<li>Logging in and resetting passwords</li>
+						<li>Page Manager</li>
+						<li>Additional Page Content Manager</li>
+						<li>Menu Manager</li>
+
+						<li class="text-muted">Dynamic forms</li>
+						<li class="text-muted">Access control (roles and permissions)</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<div class="col-md-3">
 			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-2.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 2</a></p>
 
-			<h3>What's in PR2?</h3>
+			<h3>Requirements</h3>
 
 			<ul>
-				<li class="text-sm text-danger"><strong>New PHP requirement: PHP 5.5</strong></li>
-				<li class="text-sm">Logging in and resetting passwords</li>
-				<li class="text-sm">Page Manager</li>
-				<li class="text-sm">Additional Page Content Manager</li>
-				<li class="text-sm">Menu Manager</li>
-			</ul>
-
-			<h3>Coming in PR3</h3>
-
-			<ul>
-				<li class="text-sm">Dynamic forms</li>
-				<li class="text-sm">Access control
+				<li>PHP 5.5+</li>
+				<li>MySQL, sqlite, or PostgreSQL</li>
+				<li>Modern browser
 					<ul>
-						<li class="text-sm">Roles</li>
-						<li class="text-sm">Permissions</li>
-						<li class="text-sm">Updates to menus</li>
-						<li class="text-sm">Updates to pages</li>
-					</ul>
+						<li class="text-sm">Google Chrome 37+</li>
+						<li class="text-sm">Mozilla Firefox 32+</li>
+						<li class="text-sm">Internet Explorer 10+</li>
 				</li>
-				<li class="text-sm">Further theme refinements for fringe cases and more advanced theme options</li>
-				<li class="text-sm">Support for classic main/sub menu navigation in themes</li>
 			</ul>
 		</div>
 	</div>
