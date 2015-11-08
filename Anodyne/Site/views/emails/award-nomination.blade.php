@@ -14,7 +14,7 @@
 			<p><strong>Game:</strong> {{ $gameName }}</p>
 			
 			@if ( ! empty($gameEmail))
-				<p><strong>Game Contact:</strong> {{ $gameEmail}})</p>
+				<p><strong>Game Contact:</strong> {{ $gameEmail}}</p>
 			@endif
 
 			<p><strong>URL:</strong> {{ $gameURL }}</p>
