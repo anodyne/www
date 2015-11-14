@@ -14,7 +14,7 @@ class NovaController extends \BaseController {
 	public function index()
 	{
 		// Set an initial version
-		$currentVersion = '2.4.4';
+		$currentVersion = '2.4.5';
 
 		if (App::environment() == 'production')
 		{
