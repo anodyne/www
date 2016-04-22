@@ -27,6 +27,45 @@
 			</ul>
 
 			<div class="tab-content">
+				<div id="installing" class="tab-pane">
+					{{ alert('warning', "Nova NextGen is provided \"as-is\" and doesn't have any support for it. You're free to ask questions in the forums, but understand that Anodyne will not provide walkthroughs and support for Nova NextGen at this time.") }}
+
+					<p>Nova NextGen can be run from any web server running PHP 5.5.9 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
+
+					<ol>
+						<li>If you have Preview Release 1 or 2 installed, you will need to first uninstall it in order to do a fresh install of Preview Release 3</li>
+						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
+						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
+						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code>, <code>storage</code>, and <code>nova/bootstrap/cache</code> directories (as well as all their sub-directories) writable by the web server (775).</li>
+						<li>Select the option to do a Fresh Install of Nova NextGen and follow the prompts</li>
+					</ol>
+
+					<p>Once Nova NextGen is installed, you'll be re-directed to the home page with links to move around to several different places in the system, including being able to log in and use some of the admin features. In future preview releases, you'll be able to use more of the system as it's built.</p>
+
+					<p><em>Theme developers:</em> The theme structure and supporting tools are pretty much finalized now. As such, you can start to play around with building your themes. You can look through the <code>nova/resources/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
+
+					<p><em>Extension developers:</em> Basic work has started on extensions and you're able to now create extensions and play around with them. In the future, we'll provide more complete documentation around extension development.</p>
+				</div>
+
+				<div id="features" class="tab-pane">
+					<p class="text-muted"><em>Gray text indicates features coming in the next preview release.</em></p>
+
+					<ul>
+						<li>New application structure</li>
+						<li>New flexible and responsive themeing system</li>
+						<li>Robust extension architecture</li>
+						<li>Logging in and resetting passwords</li>
+						<li>Page Manager</li>
+						<li>Additional Page Content Manager</li>
+						<li>Menu Manager</li>
+						<li>Dynamic forms</li>
+						<li>Access control (roles and permissions)</li>
+						<li class="text-muted">User management</li>
+						<li class="text-muted">User preferences</li>
+						<li class="text-muted">Notifications</li>
+					</ul>
+				</div>
+
 				<div id="faq" class="tab-pane active">
 					<h3>What Is &rdquo;Nova NextGen&ldquo;?</h3>
 
@@ -38,13 +77,17 @@
 
 					<h3>What Are the Preview Releases?</h3>
 
-					<p>Developing software like Nova NextGen is a lengthy process that takes a lot of time and effort. We didn't want to leave people empty handed though while they waited for us to finish working. In order to get Nova NextGen (even in its early stages) into your hands, we've chosen release these preview releases to give you a preview of what's coming when Nova 3 is released.</p>
+					<p>Developing software like Nova NextGen is a lengthy process that takes a lot of time and effort. We didn't want to leave people empty handed though while they waited for us to finish working. In order to get Nova NextGen (even in its early stages) into your hands, we've chosen to release these preview releases to give you a preview of what's coming when Nova 3 is released.</p>
 
 					<h3>What's the Timeline for Nova 3?</h3>
 
 					<p>Our development is being governed by two principles: <em>make it smarter</em> and <em>make it better</em>. Our goal is to make sure that every new feature added either makes Nova smarter or better. If an existing feature doesn't meet that standard, we tear it apart and re-build it until it does, even if you'll never notice the change. At the end of the day, it's about building a product we're proud of and something you'll love using.</p>
 
-					<p>Believe us when we say, we're committed to getting the next generation of Nova into your hands, but we won't do it until we feel it's the best product it can possibly be. That involves a lot of time and effort, so at this stage, there is no timeline on when Nova 3 will be completed.</p>
+					<p>Believe us when we say, we're committed to getting the next generation of Nova into your hands, but we won't do so until we feel it's the best product it can possibly be. That involves a lot of time and effort, so at this stage, there is no timeline on when Nova 3 will be completed.</p>
+
+					<h3>Where is <em>Feature X</em>?</h3>
+
+					<p>Nova NextGen is being developed in milestones. Instead of trying to tackle lots of things at once, we're biting off small chunks of functionality and working on the entire system piece-by-piece. If you don't see a feature in the preview releases, it's likely it's been slated for work in a future milestone. If you have specific questions about a feature, feel free to post on the <a href="http://forums.anodyne-productions.com">forums</a>.</p>
 				</div>
 
 				<div id="vision" class="tab-pane">
@@ -94,48 +137,11 @@
 						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-whats-next">What's Next?</a></dt>
 					</dl>
 				</div>
-
-				<div id="installing" class="tab-pane">
-					{{ alert('warning', "Nova NextGen is provided \"as-is\" and doesn't have any support for it. You're free to ask questions in the forums, but understand that Anodyne will not provide walkthroughs and support for Nova NextGen at this time.") }}
-
-					<p>Nova NextGen can be run from any web server running PHP 5.5.9 or higher with a MySQL, PostgreSQL, or SQLite database. You can also install Nova NextGen on a local server if you're running one, so long as it has PHP and a database.</p>
-
-					<ol>
-						<li>If you have Preview Release 1 installed, you will need to first uninstall that in order to do a fresh install of Preview Release 2</li>
-						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
-						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
-						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code>, <code>storage</code>, and <code>nova/bootstrap/cache</code> directories (as well as all their sub-directories) writable by the web server (777).</li>
-						<li>Select the option to do a Fresh Install of Nova NextGen and follow the prompts</li>
-					</ol>
-
-					<p>Once Nova NextGen is installed, you'll be re-directed to a basic front page with some links to move around a few different places in the system, including being able to log in and use some of the admin features. In future preview releases, you'll be able to use more of the system as it's built.</p>
-
-					<p><em>Theme developers:</em> Much of the structure for themes is in place now. You can look through the <code>nova/resources/views</code> directory to see what's there and read more in the Site Themes overview of the Nova NextGen Vision series.</p>
-
-					<p><em>Extension developers:</em> There hasn't been any work done on extensions yet, but in future preview releases we'll have more stuff for you to play with.</p>
-				</div>
-
-				<div id="features" class="tab-pane">
-					<p class="text-muted"><em>Gray text indicates features coming in the next preview release.</em></p>
-
-					<ul>
-						<li>New application structure</li>
-						<li>New flexible and responsive themeing system</li>
-						<li>Robust extension architecture</li>
-						<li>Logging in and resetting passwords</li>
-						<li>Page Manager</li>
-						<li>Additional Page Content Manager</li>
-						<li>Menu Manager</li>
-
-						<li class="text-muted">Dynamic forms</li>
-						<li class="text-muted">Access control (roles and permissions)</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 
 		<div class="col-md-3">
-			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-2.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 2</a></p>
+			<p><a href="{{ $_ENV['FS_URL'] }}nova/nova-nextgen-preview-3.zip" class="btn btn-primary btn-lg btn-block">{{ $_icons['download'] }} Preview Release 3</a></p>
 
 			<h3>Requirements</h3>
 
