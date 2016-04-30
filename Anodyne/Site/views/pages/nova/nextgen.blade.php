@@ -92,49 +92,49 @@
 
 				<div id="vision" class="tab-pane">
 					<dl>
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-change-is-coming">Change Is Coming</a></dt>
+						<dt><a href="https://medium.com/@anodyne/change-is-coming-ac512a37ec48">Change Is Coming</a></dt>
 						<dd>Major versions are a necessity, but why do we make a bigger deal out of major releases?</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-a-new-foundation">A New Foundation</a></dt>
+						<dt><a href="https://medium.com/@anodyne/a-new-foundation-644b038d5d98">A New Foundation</a></dt>
 						<dd>For years, Nova has been built on top of CodeIgniter, but that's changing. Learn about Nova's new foundation.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-nova-is-broken">Nova Is Broken</a></dt>
+						<dt><a href="https://medium.com/@anodyne/nova-is-broken-96e6e1b519a1">Nova Is Broken</a></dt>
 						<dd>Not just missing features, but the very philosophy Nova is developed with is out-dated and broken. Let's fix it.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-a-new-file-structure">A New File Structure</a></dt>
+						<dt><a href="https://medium.com/@anodyne/a-new-file-structure-429ee17cba22">A New File Structure</a></dt>
 						<dd>Let's talk about a new look to the file structure of Nova and how it'll make things easier for everyone.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-site-themes">Site Themes</a></dt>
+						<dt><a href="https://medium.com/@anodyne/site-themes-f4ce7ec474c0">Site Themes</a></dt>
 						<dd>The way themeing works in NextGen will be very different from other versions of Nova. Find out more.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-application-review-center">Application Review Center</a></dt>
+						<dt><a href="https://medium.com/@anodyne/application-review-center-6ef666631f5b">Application Review Center</a></dt>
 						<dd>We're social with everything else, so why not application review too? Find out more about Nova's social application review feature.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-manifests">Manifests</a></dt>
+						<dt><a href="https://medium.com/@anodyne/manifests-db08aae7d560">Manifests</a></dt>
 						<dd>Gone are the days of rigid manifests that you have no control over. Borrowing an idea from Microsoft SharePoint, you can build your manifests to show what you want.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-access-control">Access Control</a></dt>
+						<dt><a href="https://medium.com/@anodyne/access-control-934a460f5bd6">Access Control</a></dt>
 						<dd>Control what people can and can't do even better than before.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-ranks-redux">Ranks Redux</a></dt>
+						<dt><a href="https://medium.com/@anodyne/ranks-redux-d87343d832e6">Ranks Redux</a></dt>
 						<dd>Ranks have been in need of a total rebuild for years. This new way of handling ranks is easy and powerful.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-dynamic-forms-2-0">Dynamic Forms 2.0</a></dt>
+						<dt><a href="https://medium.com/@anodyne/dynamic-forms-2-0-1303956d0195">Dynamic Forms 2.0</a></dt>
 						<dd>Dynamic forms have been awesome in Nova, but we want them to be even better.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-pages">Pages</a></dt>
+						<dt><a href="https://medium.com/@anodyne/pages-b61ff5a8b3b2">Pages</a></dt>
 						<dd>A dynamic and robust system needs an equally dynamic and robust page system so you can create and manage pages without using code.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-storytelling">Storytelling</a></dt>
+						<dt><a href="https://medium.com/@anodyne/storytelling-2c65977d3000">Storytelling</a></dt>
 						<dd>Missions, mission posts, and personal logs are going away. Learn about one of Nova NextGen's pillar features: storytelling.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-developers">Developers</a></dt>
+						<dt><a href="https://medium.com/@anodyne/developers-fc2d97e35992">Developers</a></dt>
 						<dd>Developers will have some fun new things to play with when NextGen arrives.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-trimming-the-fat">Trimming the Fat</a></dt>
+						<dt><a href="https://medium.com/@anodyne/trimming-the-fat-98cb19c56f7">Trimming the Fat</a></dt>
 						<dd>What doesn't get put in is almost more important than what does get put in. Lots of stuff is coming out. Find out more.</dd>
 
-						<dt><a href="http://anodyne-productions.com/news/post/nova-nextgen-whats-next">What's Next?</a></dt>
+						<dt><a href="https://medium.com/@anodyne/whats-next-4f4f6676fa5d">What's Next?</a></dt>
 					</dl>
 				</div>
 			</div>
