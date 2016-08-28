@@ -69,7 +69,7 @@
 			<div class="col-md-7">
 				<p>To begin, select your game's genre and click download to get the latest version of Nova 2. If you want to download a previous version, you can select the version you want from the dropdown. You can use the same zip archive for a fresh install, upgrade from SMS or Nova 1, or updating Nova 2.</p>
 
-				<p class="alert alert-success">Nova 2.4+ requires PHP 5.3 or higher. Nova 2.3 will work on PHP 5.2.</p>
+				<p class="alert alert-success">Nova 2.4+ requires PHP 5.3 or higher. Nova 2.3 will work on PHP 5.2. Nova 3 will require PHP 7 or higher.</p>
 			</div>
 			<div class="col-md-5">
 				<div class="row">
