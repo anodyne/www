@@ -8,7 +8,7 @@
 			
 			<li><a href="{{ route('home') }}#news">News</a></li>
 			<li><a href="{{ route('home') }}#help">Help</a></li>
-			<li><a href="https://kiwiirc.com/client?settings=3cca542b4ff586e92846490eea2d3277">Chat Room</a></li>
+			<li><a href="https://kiwiirc.com/client?settings=acd01fa5290119cfa95b879f8a782ea9">Chat Room</a></li>
 		@endif
 
 		@if ($type == 'nova')
