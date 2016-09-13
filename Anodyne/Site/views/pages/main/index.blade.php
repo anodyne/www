@@ -114,7 +114,7 @@
 		<dt><a href="https://twitter.com/anodyneprod" target="_blank">Twitter</a> &amp; <a href="http://facebook.com/anodyneproductions" target="_blank">Facebook</a></dt>
 		<dd>Feel free to post on our wall or send us a tweet with any issues you may be having. The best place to get help will still be the forums, but if you've got a quick question, we're happy to answer it through social media.</dd>
 
-		<dt><a href="https://kiwiirc.com/client?settings=3cca542b4ff586e92846490eea2d3277" target="_blank">IRC</a></dt>
-		<dd>If IRC is more your speed, we have a chat room on AceIRC. You can use the link above to connect through your browser, or if you prefer to use your own client you can connect to irc.aceirc.org using port 6667 and join #Anodyne.</dd>
+		<dt><a href="https://kiwiirc.com/client?settings=acd01fa5290119cfa95b879f8a782ea9" target="_blank">IRC</a></dt>
+		<dd>If IRC is more your speed, we have a chat room on AstraIRC. You can use the link above to connect through your browser, or if you prefer to use your own client you can connect to irc.astrairc.com using port 6667 and join #Anodyne.</dd>
 	</dl>
 @stop
