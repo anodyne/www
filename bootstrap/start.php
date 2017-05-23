@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('IT-M-50T88', 'Whistler.local'),
+	'local' => array('IT-M-50T88', 'Whistler.local', 'RLT560-173'),
 
 ));
 
