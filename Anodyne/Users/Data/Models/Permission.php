@@ -9,7 +9,7 @@ class Permission extends EntrustPermission {
 	use PresentableTrait;
 	use SoftDeletingTrait;
 
-	protected $table = 'permissions';
+	protected $table = 'core_permissions';
 
 	protected $fillable = ['name', 'display_name'];
 

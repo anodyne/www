@@ -9,7 +9,7 @@ class Role extends EntrustRole {
     use PresentableTrait;
     use SoftDeletingTrait;
 
-	protected $table = 'roles';
+	protected $table = 'core_roles';
 
 	protected $fillable = ['name'];
 

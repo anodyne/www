@@ -17,7 +17,7 @@ class User extends \Model implements UserInterface, RemindableInterface {
 	use PresentableTrait;
 	use SoftDeletingTrait;
 	
-	protected $table = 'users';
+	protected $table = 'core_users';
 
 	protected $fillable = ['name', 'email', 'password', 'url', 'bio', 'username',
 		'twitter', 'facebook', 'google', 'remember_token'];
