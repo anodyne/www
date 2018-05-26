@@ -12,7 +12,7 @@ class CreateUsers extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('users', function(Blueprint $table)
+		Schema::create('core_users', function(Blueprint $table)
 		{
 			$table->bigIncrements('id');
 			$table->string('name');
@@ -29,14 +29,14 @@ class CreateUsers extends Migration {
 			$table->softDeletes();
 		});
 
-		Schema::create('sessions', function(Blueprint $table)
+		Schema::create('core_sessions', function(Blueprint $table)
 		{
 			$table->string('id')->unique();
 			$table->text('payload');
 			$table->integer('last_activity');
 		});
 
-		Schema::create('roles', function(Blueprint $table)
+		Schema::create('core_roles', function(Blueprint $table)
 		{
 			$table->increments('id')->unsigned();
 			$table->string('name')->unique();
@@ -44,16 +44,16 @@ class CreateUsers extends Migration {
 			$table->softDeletes();
 		});
 
-		Schema::create('assigned_roles', function(Blueprint $table)
+		Schema::create('core_assigned_roles', function(Blueprint $table)
 		{
 			$table->bigIncrements('id')->unsigned();
 			$table->bigInteger('user_id')->unsigned();
 			$table->integer('role_id')->unsigned();
-			$table->foreign('user_id')->references('id')->on('users'); // assumes a users table
-			$table->foreign('role_id')->references('id')->on('roles');
+			//$table->foreign('user_id')->references('id')->on('users'); // assumes a users table
+			//$table->foreign('role_id')->references('id')->on('roles');
 		});
 
-		Schema::create('permissions', function(Blueprint $table)
+		Schema::create('core_permissions', function(Blueprint $table)
 		{
 			$table->increments('id')->unsigned();
 			$table->string('name');
@@ -62,13 +62,13 @@ class CreateUsers extends Migration {
 			$table->softDeletes();
 		});
 
-		Schema::create('permission_role', function(Blueprint $table)
+		Schema::create('core_permission_role', function(Blueprint $table)
 		{
 			$table->increments('id')->unsigned();
 			$table->integer('permission_id')->unsigned();
 			$table->integer('role_id')->unsigned();
-			$table->foreign('permission_id')->references('id')->on('permissions'); // assumes a users table
-			$table->foreign('role_id')->references('id')->on('roles');
+			//$table->foreign('permission_id')->references('id')->on('permissions'); // assumes a users table
+			//$table->foreign('role_id')->references('id')->on('roles');
 		});
 	}
 
@@ -79,24 +79,24 @@ class CreateUsers extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('assigned_roles', function(Blueprint $table)
+		Schema::table('core_assigned_roles', function(Blueprint $table)
 		{
-			$table->dropForeign('assigned_roles_user_id_foreign');
-			$table->dropForeign('assigned_roles_role_id_foreign');
+			//$table->dropForeign('core_assigned_roles_user_id_foreign');
+			//$table->dropForeign('core_assigned_roles_role_id_foreign');
 		});
 
-		Schema::table('permission_role', function(Blueprint $table)
+		Schema::table('core_permission_role', function(Blueprint $table)
 		{
-			$table->dropForeign('permission_role_permission_id_foreign');
-			$table->dropForeign('permission_role_role_id_foreign');
+			//$table->dropForeign('core_permission_role_permission_id_foreign');
+			//$table->dropForeign('core_permission_role_role_id_foreign');
 		});
 
-		Schema::dropIfExists('assigned_roles');
-		Schema::dropIfExists('permission_role');
-		Schema::dropIfExists('roles');
-		Schema::dropIfExists('permissions');
-		Schema::dropIfExists('users');
-		Schema::dropIfExists('sessions');
+		Schema::dropIfExists('core_assigned_roles');
+		Schema::dropIfExists('core_permission_role');
+		Schema::dropIfExists('core_roles');
+		Schema::dropIfExists('core_permissions');
+		Schema::dropIfExists('core_users');
+		Schema::dropIfExists('core_sessions');
 	}
 
 }

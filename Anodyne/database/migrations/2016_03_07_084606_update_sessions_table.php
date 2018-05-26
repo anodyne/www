@@ -12,7 +12,7 @@ class UpdateSessionsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('sessions', function(Blueprint $table)
+		Schema::table('core_sessions', function(Blueprint $table)
 		{
 			$table->integer('user_id')->nullable();
 			$table->string('ip_address', 45)->nullable();
@@ -27,7 +27,7 @@ class UpdateSessionsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('sessions', function(Blueprint $table)
+		Schema::table('core_sessions', function(Blueprint $table)
 		{
 			$table->dropColumn(['user_id', 'ip_address', 'user_agent']);
 		});

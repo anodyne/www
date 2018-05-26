@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'sqlite',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -57,6 +57,12 @@ return array(
 			'prefix'    => '',
 		),
 
+		'sqlite' => array(
+			'driver'   => 'sqlite',
+			'database' => storage_path().'/users.sqlite',
+			'prefix'   => '',
+		),
+
 	),
 
 	/*
@@ -70,7 +76,7 @@ return array(
 	|
 	*/
 
-	'migrations' => 'migrations',
+	'migrations' => 'core_migrations',
 
 	/*
 	|--------------------------------------------------------------------------
