@@ -6,7 +6,7 @@
 
 @section('content')
 	<p>Built by <a href="{{ route('home') }}">Anodyne Productions</a>, Nova is the premier RPG management software. With an easy-to-use interface, a built-in mini-wiki, vastly improved messaging and posting systems, a wide array of developer tools and much more, Nova is all you need to help you stop managing your game and get back to playing it.</p>
-				
+
 	<hr class="partial-split">
 
 	<a name="features"></a><h1>Features</h1>
@@ -16,7 +16,7 @@
 			<h2>Post Locking</h2>
 			<p>Frustrated when an update you just made to a post gets wiped out because someone else was editing at the same time? No more. Never have your changes overwritten with a smart post locking system that locks and unlocks multi-author posts during editing.</p>
 		</div>
-		
+
 		<div class="col-sm-6">
 			<h2>Say Anything</h2>
 			<p>Site messages in Nova can now contain previously disallowed HTML content meaning that just about anything you want to share can be done from right inside Nova without having to touch any files. Just copy and paste your code into the message!</p>
@@ -28,17 +28,17 @@
 			<h3>Find</h3>
 			<p class="text-sm">Search through all your content to find what you're looking for.</p>
 		</div>
-		
+
 		<div class="col-sm-6 col-md-3">
 			<h3>Change</h3>
 			<p class="text-sm">Lots of customization options with powerful developer tools.</p>
 		</div>
-		
+
 		<div class="col-sm-6 col-md-3">
 			<h3>Share</h3>
 			<p class="text-sm">Collaborate with other users through a simple built-in wiki.</p>
 		</div>
-		
+
 		<div class="col-sm-6 col-md-3">
 			<h3>Gather</h3>
 			<p class="text-sm">Get what you want from users through customizable forms.</p>
@@ -47,17 +47,17 @@
 
 	<hr class="partial-split">
 
-	<h2>New in Nova 2.4</h2>
+	<h2>New in Nova 2.5</h2>
 
 	<dl>
-		<dt>New Email Class</dt>
-	    <dd>With a rise in recent months of hosts having trouble handling email from Nova, we've created a new email class that's a wrapper around the popular and robust <a href="http://swiftmailer.org/" target="_blank">Swiftmailer</a> email library. There are no changes needed to start using the new class and third-party developers will find the API is almost identical to CodeIgniter's built-in email class. In addition, the updated class should allow for using third-party SMTP email delivery services more easily than in CodeIgniter's email class.</dd>
-		
-		<dt>Manifest JavaScript Updates</dt>
-	    <dd>A recent trend we've seen is people re-designing the manifest to something less traditional. We love seeing the creativity of the community, but people have run into issues with how visibility toggling has worked. To remove that stumbling block, we've tweaked how Nova handles hiding and showing pieces of the manifest to give third-party developers more freedom in playing around with the manifest.</dd>
-		
-		<dt>Bug Fixes</dt>
-	    <dd>As always, we've dug in and addressed issues that have popped up in the recent weeks and months, including issues with mission post, personal log, and news item visibility that would allow people to be able to see non-activated items.</dd>
+		<dt>GDPR Compliance</dt>
+	    <dd>With the passing of the European Union's General Data Protection Regulation (GDPR), there's a renewed push toward privacy and controlling your own data. We're just like you and like that idea too, so Nova is fully GDPR compliant. Not only have we added privacy policies for admins to modify from within Nova, but we've also added the ability for users to delete their own accounts.</dd>
+
+		<dt>PHP 7 Updates</dt>
+	    <dd>We've dug into Nova's guts and done some work to make sure admins running on PHP 7 servers don't have issues any more. You should be able to install and run Nova on any server running PHP 5.3 all the way up to PHP 7.2.</dd>
+
+		<dt>Private Message Searching</dt>
+	    <dd>We've also expanded our search options in Nova to include received and sent private messages.</dd>
 	</dl>
 
 	<hr class="partial-split">
@@ -69,7 +69,7 @@
 			<div class="col-md-7">
 				<p>To begin, select your game's genre and click download to get the latest version of Nova 2. If you want to download a previous version, you can select the version you want from the dropdown. You can use the same zip archive for a fresh install, upgrade from SMS or Nova 1, or updating Nova 2.</p>
 
-				<p class="alert alert-success">Nova 2.4+ requires PHP 5.3 or higher. Nova 2.3 will work on PHP 5.2. Nova 3 will require PHP 7 or higher.</p>
+				<p class="alert alert-success">Nova 2.5+ requires PHP 5.3 or higher. Nova 2.3 will work on PHP 5.2. Nova 3 will require PHP 7 or higher.</p>
 			</div>
 			<div class="col-md-5">
 				<div class="row">
@@ -95,8 +95,6 @@
 			</div>
 		</div>
 
-		<p class="alert alert-warning"><strong>Note:</strong> There is an additional step involved in the Nova 2.4 update. Please reference the <a href="http://help.anodyne-productions.com/article/nova-2/updating-to-nova-24">Nova 2.4 Update Guide</a> for more information.</p>
-
 		<hr class="partial-split">
 	</div>
 
@@ -107,19 +105,19 @@
 	<dl>
 		<dt>Let There Be Nova!</dt>
 		<dd>If you don't have a copy of Nova 3 installed already (and you aren't migrating from Nova 2 or SMS 2), you'll want to do a fresh install. Read through this guide before you start and then use it as step-by-step instructions as you go through the process of installing Nova for the first time.</dd>
-		
+
 		<dt>Upgrade from Nova 2</dt>
 		<dd>There was a lot of stuff that changed between versions 2 and 3 of Nova, but never fear, we have a thorough guide available to walk you through the process so that you'll be up and running on the latest and greatest in no time at all. Make sure you read through the document before attempting to upgrade! <strong class="text-danger">Please note: if you are still running Nova 1, you will need to upgrade from Nova 1 to Nova 2 before upgrading to Nova 3.</strong></dd>
-		
+
 		<dt>Upgrade from SMS 2</dt>
 		<dd>If you're still running a game off of SMS 2 and want to migrate up to Nova 2, use this thorough guide that explains everything you need to know including what will and won't be migrated. Read through this guide before you start and then use it as step-by-step instruction as you upgrade from SMS. <strong class="text-danger">Please note: Nova 3.0 will be the last version to provide an upgrade path from SMS!</strong></dd>
-		
+
 		<dt>&ldquo;This year we put a &lsquo;12&rsquo; on the box.&rdquo;</dt>
 		<dd>Unlike ENCOM charging for their latest OS, we provide updates for free. Learn how to get the updates and make sure your sim is running the latest and greatest version of Nova.</dd>
-		
+
 		<dt>I've Got Nova, Now What?!</dt>
 		<dd>Getting up and running is only half the battle. If you aren't familiar with Nova's features or how to manage things, this guide will help you go from Nova novice to Nova ninja in no time!</dd>
-		
+
 		<dt>&ldquo;I&rsquo;ve made a lot of special modifications myself.&rdquo;</dt>
 		<dd>Like Han Solo and the intrepid <em>Millenium Falcon</em>, your bucket-of-bolts Nova install can make the Kessel Run in less than 12 parsecs too with some skins, MODs, and rank sets. Find out where to find them and how to install them before you take on the Empire!</dd>
 	</dl>
@@ -136,13 +134,13 @@
 
 		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
-		
+
 		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
 		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
-		
+
 		<dt><a href="#" class="js-contact">Email</a></dt>
 		<dd>We're happy to answer questions over email, but the best place to get help is on the forums. Not only is it quicker for us to help you that way, but it also benefits other members of the community that may be having similar issues or someone who may come along several months from now with the same issue.</dd>
-		
+
 		<dt><a href="https://twitter.com/anodyneprod" target="_blank">Twitter</a> &amp; <a href="http://facebook.com/anodyneproductions" target="_blank">Facebook</a></dt>
 		<dd>Feel free to post on our wall or send us a tweet with any issues you may be having. The best place to get help will still be the forums, but if you've got a quick question, we're happy to answer it through social media.</dd>
 
@@ -162,7 +160,7 @@
 			e.preventDefault();
 
 			var clicked = $(this);
-			
+
 			// Show the modal
 			$('#download-confirm').modal('show');
 
@@ -185,7 +183,7 @@
 				// Build the link
 				$('#download-btn').attr('href', "{{ $_ENV['FS_URL'] }}nova/nova-" + version + "-" + genre + ".zip");
 				$('#download-btn .genre-text').html(genre.toUpperCase());
-				
+
 				// Show the download button
 				$('#download-container').removeClass('hide');
 			}
