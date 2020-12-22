@@ -15,10 +15,6 @@
 		@if ($type === 'nova')
 			<li><a href="{{ route('nova.home') }}#features">Features</a></li>
 			<li class="visible-md visible-lg"><a href="{{ route('nova.home') }}#download">Download</a></li>
-			<!--<li><a href="{{ route('nova.home') }}#start">Getting Started</a></li>-->
-			<li><a href="{{ route('nova.home') }}#help">Help</a></li>
-			{{-- <li><a href="{{ route('nova.awards') }}">Awards</a></li> --}}
-			{{-- <li><a href="{{ route('nova.nextgen') }}">Nova NextGen</a></li> --}}
 		@endif
 	</ul>
 </nav>

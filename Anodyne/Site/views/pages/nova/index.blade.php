@@ -93,59 +93,7 @@
 				</div>
 			</div>
 		</div>
-
-		<hr class="partial-split">
 	</div>
-
-	<!--<a name="start"></a><h1>Getting Started</h1>
-
-	<p>If you're new to Nova, it can be a little daunting to get started. Use these helpful guides to get up and running with Nova in no time!</p>
-
-	<dl>
-		<dt>Let There Be Nova!</dt>
-		<dd>If you don't have a copy of Nova 3 installed already (and you aren't migrating from Nova 2 or SMS 2), you'll want to do a fresh install. Read through this guide before you start and then use it as step-by-step instructions as you go through the process of installing Nova for the first time.</dd>
-
-		<dt>Upgrade from Nova 2</dt>
-		<dd>There was a lot of stuff that changed between versions 2 and 3 of Nova, but never fear, we have a thorough guide available to walk you through the process so that you'll be up and running on the latest and greatest in no time at all. Make sure you read through the document before attempting to upgrade! <strong class="text-danger">Please note: if you are still running Nova 1, you will need to upgrade from Nova 1 to Nova 2 before upgrading to Nova 3.</strong></dd>
-
-		<dt>Upgrade from SMS 2</dt>
-		<dd>If you're still running a game off of SMS 2 and want to migrate up to Nova 2, use this thorough guide that explains everything you need to know including what will and won't be migrated. Read through this guide before you start and then use it as step-by-step instruction as you upgrade from SMS. <strong class="text-danger">Please note: Nova 3.0 will be the last version to provide an upgrade path from SMS!</strong></dd>
-
-		<dt>&ldquo;This year we put a &lsquo;12&rsquo; on the box.&rdquo;</dt>
-		<dd>Unlike ENCOM charging for their latest OS, we provide updates for free. Learn how to get the updates and make sure your sim is running the latest and greatest version of Nova.</dd>
-
-		<dt>I've Got Nova, Now What?!</dt>
-		<dd>Getting up and running is only half the battle. If you aren't familiar with Nova's features or how to manage things, this guide will help you go from Nova novice to Nova ninja in no time!</dd>
-
-		<dt>&ldquo;I&rsquo;ve made a lot of special modifications myself.&rdquo;</dt>
-		<dd>Like Han Solo and the intrepid <em>Millenium Falcon</em>, your bucket-of-bolts Nova install can make the Kessel Run in less than 12 parsecs too with some skins, MODs, and rank sets. Find out where to find them and how to install them before you take on the Empire!</dd>
-	</dl>
-
-	<hr>-->
-
-	<a name="help"></a><h1>Get Help</h1>
-
-	<p>Whether it's a question about an issue you're having, getting help with putting the finishing touches on your skin, or working through the development of your MOD, we've have several options for you to get the help you need with any of our products:</p>
-
-	<dl>
-		<dt><a href="{{ config('anodyne.links.help') }}">Anodyne Help Center</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova in the new Anodyne Help Center. From the Help Center, you can search through the wide array of help articles about all of our products and get the help you need.</dd>
-
-		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
-		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
-
-		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
-
-		<dt><a href="#" class="js-contact">Email</a></dt>
-		<dd>We're happy to answer questions over email, but the best place to get help is on the forums. Not only is it quicker for us to help you that way, but it also benefits other members of the community that may be having similar issues or someone who may come along several months from now with the same issue.</dd>
-
-		<dt><a href="https://twitter.com/anodyneprod" target="_blank">Twitter</a> &amp; <a href="http://facebook.com/anodyneproductions" target="_blank">Facebook</a></dt>
-		<dd>Feel free to post on our wall or send us a tweet with any issues you may be having. The best place to get help will still be the forums, but if you've got a quick question, we're happy to answer it through social media.</dd>
-
-		<!--<dt><a href="https://kiwiirc.com/client?settings=acd01fa5290119cfa95b879f8a782ea9" target="_blank">IRC</a></dt>
-		<dd>If IRC is more your speed, we have a chat room on AstraIRC. You can use the link above to connect through your browser, or if you prefer to use your own client you can connect to irc.astrairc.com using port 6667 and join #Anodyne.</dd>-->
-	</dl>
 @stop
 
 @section('modals')
