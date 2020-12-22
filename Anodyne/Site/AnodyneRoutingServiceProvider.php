@@ -34,6 +34,9 @@ class AnodyneRoutingServiceProvider extends ServiceProvider {
 			Route::get('faqs', [
 				'as'	=> 'faqs',
 				'uses'	=> 'MainController@faqs']);
+			Route::get('service-updates', [
+				'as'	=> 'service-updates',
+				'uses'	=> 'MainController@serviceUpdates']);
 			Route::get('contact', [
 				'as'	=> 'contact',
 				'uses'	=> 'MainController@contact']);

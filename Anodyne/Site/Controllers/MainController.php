@@ -38,6 +38,11 @@ class MainController extends \BaseController {
 		return View::make('pages.main.privacy');
 	}
 
+	public function serviceUpdates()
+	{
+		return View::make('pages.main.service-updates');
+	}
+
 	public function contact()
 	{
 		// Set an anti-spam number
