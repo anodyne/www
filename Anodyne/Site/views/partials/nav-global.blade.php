@@ -1,7 +1,7 @@
 <nav class="nav-global visible-xs">
 	<div class="container">
 		<ul>
-			@if ($active == 'nova')
+			@if ($active === 'nova')
 				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Nova<div class="arrow"></div></a></li>
 			@else
 				<li><a href="#" class="active" data-toggle="modal" data-target="#navGlobalMobile">Anodyne<div class="arrow"></div></a></li>
@@ -24,6 +24,7 @@
 					<li><a href="{{ config('anodyne.links.xtras') }}">Xtras</a></li>
 					<li><a href="{{ config('anodyne.links.forums') }}">Forums</a></li>
 					<li><a href="{{ config('anodyne.links.help') }}">Help</a></li>
+					<li><a href="https://discord.gg/7WmKUks">Discord</a></li>
 					<li><a href="#" class="js-contact">Contact</a></li>
 					<li><a href="{{ route('register') }}">Register</a></li>
 					<li><a href="{{ route('login') }}">Log In</a></li>
@@ -79,6 +80,7 @@
 			<li><a href="{{ config('anodyne.links.xtras') }}">Xtras<div class="arrow"></div></a></li>
 			<li><a href="{{ config('anodyne.links.forums') }}">Forums<div class="arrow"></div></a></li>
 			<li><a href="{{ config('anodyne.links.help') }}">Help<div class="arrow"></div></a></li>
+			<li><a href="https://discord.gg/7WmKUks">Discord<div class="arrow"></div></a></li>
 			<!--<li><a href="http://learn.anodyne-productions.com">Learn<div class="arrow"></div></a></li>-->
 			<li class="visible-sm"><a href="#" class="js-contact">Contact</a></li>
 			<li class="visible-sm"><a href="{{ route('register') }}">Register</a></li>

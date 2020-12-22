@@ -23,7 +23,7 @@
 				<p><a href="{{ route('nova.home') }}" class="btn btn-primary btn-lg btn-block">Get Nova</a></p>
 			</div>
 		</div>
-		
+
 		<div class="col-md-6">
 			<div class="well">
 				<h2 class="text-center">AnodyneXtras</h2>
@@ -53,13 +53,13 @@
 		<div class="col-xs-12">
 			<div class="well">
 				<h2 class="text-center">Anodyne Help Resources</h2>
-				
+
 				<div class="row">
 					<div class="col-md-6">
 						<p class="text-sm">Everything you could ever want or need to know about Anodyne's products can be found in our learning system. Take courses to get proficient with our products and share that knowledge with others!</p>
 						<p><a href="/nova" class="btn btn-primary btn-lg btn-block">Learn</a></p>
 					</div>
-					
+
 					<div class="col-md-6">
 						<p class="text-sm">If you're having an issue with one of our products, this is the first place to look. We've compiled frequently asked questions as well as common issues in a simple, searchable site so you can get back to your game!</p>
 						<p><a href="/nova" class="btn btn-primary btn-lg btn-block">Visit the Help Center</a></p>
@@ -69,7 +69,7 @@
 		</div>
 	</div>-->
 
-	<hr class="partial-split">
+	{{-- <hr class="partial-split">
 
 	<a name="news"></a><h1>Latest News</h1>
 
@@ -104,17 +104,17 @@
 
 		<dt><a href="{{ config('anodyne.links.forums') }}">The Forums</a></dt>
 		<dd>Our forums are the primary way to get help with any of our products. You can also use the forums to ask questions, get direction, and talk with other members of the community. (Requires registration)</dd>
-		
-		<!--<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
-		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>-->
-		
+
+		<dt><a href="http://docs.anodyne-productions.com">AnodyneDocs</a></dt>
+		<dd>We've spent a great deal of time building an extensive user guide for Nova through AnodyneDocs. If you don't see something here that you think should be included, make sure to drop us a line and let us know.</dd>
+
 		<dt><a href="#" class="js-contact">Email</a></dt>
 		<dd>We're happy to answer questions over email, but the best place to get help is on the forums. Not only is it quicker for us to help you that way, but it also benefits other members of the community that may be having similar issues or someone who may come along several months from now with the same issue.</dd>
-		
+
 		<dt><a href="https://twitter.com/anodyneprod" target="_blank">Twitter</a> &amp; <a href="http://facebook.com/anodyneproductions" target="_blank">Facebook</a></dt>
 		<dd>Feel free to post on our wall or send us a tweet with any issues you may be having. The best place to get help will still be the forums, but if you've got a quick question, we're happy to answer it through social media.</dd>
 
-		<!--<dt><a href="https://kiwiirc.com/client?settings=acd01fa5290119cfa95b879f8a782ea9" target="_blank">IRC</a></dt>
-		<dd>If IRC is more your speed, we have a chat room on AstraIRC. You can use the link above to connect through your browser, or if you prefer to use your own client you can connect to irc.astrairc.com using port 6667 and join #Anodyne.</dd>-->
-	</dl>
+		<dt><a href="https://kiwiirc.com/client?settings=acd01fa5290119cfa95b879f8a782ea9" target="_blank">IRC</a></dt>
+		<dd>If IRC is more your speed, we have a chat room on AstraIRC. You can use the link above to connect through your browser, or if you prefer to use your own client you can connect to irc.astrairc.com using port 6667 and join #Anodyne.</dd>
+	</dl> --}}
 @stop
