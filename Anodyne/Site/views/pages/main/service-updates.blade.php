@@ -15,7 +15,7 @@
 
 	<p>The first thing we want to discuss is Nova support.</p>
 
-	<p>Effectively immediately, all support will be handled through our <a href="https://discord.gg/7WmKUks" target="_blank">Discord server</a>. We've had a Discord server for quite a while now, but haven't actively advertised it until now. Today we pushed updates to all of our sites to provide a link to our Discord from (almost) all pages.</p>
+	<p>Effective immediately, all support will be handled through our <a href="https://discord.gg/7WmKUks" target="_blank">Discord server</a>. We've had a Discord server for quite a while now, but haven't actively advertised it until now. Today we pushed updates to all of our sites to provide a link to our Discord from (almost) all pages.</p>
 
 	<p>The truth is that over the years the forums have seen less and less traffic. On top of that, our installation of phpBB is old and would require significant time to get updated to the latest version. Most RPG organization have moved onto Discord anyway, so most of our community is already there, so it made a lot of sense to us to use Discord as the primary means of getting help with Nova.</p>
 
