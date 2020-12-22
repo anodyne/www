@@ -47,17 +47,14 @@
 
 	<hr class="partial-split">
 
-	<h2>New in Nova 2.5</h2>
+	<h2>New in Nova 2.6</h2>
 
 	<dl>
-		<dt>GDPR Compliance</dt>
-	    <dd>With the passing of the European Union's General Data Protection Regulation (GDPR), there's a renewed push toward privacy and controlling your own data. We're just like you and like that idea too, so Nova is fully GDPR compliant. Not only have we added privacy policies for admins to modify from within Nova, but we've also added the ability for users to delete their own accounts.</dd>
+		<dt>Event System</dt>
+	    <dd>Mod developers can take advantage of a new event system in Nova 2 to listen for specific events during Nova's lifecycle or even listen for specific calls to the database and hook into those events to code specific functionality, modifications, or changes to the core system. <em>This event system is officially being classified as <strong>experimental</strong> for the remainder of Nova 2's life.</em></dd>
 
-		<dt>PHP 7 Updates</dt>
-	    <dd>We've dug into Nova's guts and done some work to make sure admins running on PHP 7 servers don't have issues any more. You should be able to install and run Nova on any server running PHP 5.3 all the way up to PHP 7.2.</dd>
-
-		<dt>Private Message Searching</dt>
-	    <dd>We've also expanded our search options in Nova to include received and sent private messages.</dd>
+		<dt>Extension System</dt>
+	    <dd>Mod developers can take advantage of a new extension system in Nova 2 to write significantly more robust mods that extend Nova beyond its default capabilities. <em>This extension system is officially being classified as <strong>experimental</strong> for the remainder of Nova 2's life.</em></dd>
 	</dl>
 
 	<hr class="partial-split">
@@ -70,6 +67,8 @@
 				<p>To begin, select your game's genre and click download to get the latest version of Nova 2. If you want to download a previous version, you can select the version you want from the dropdown. You can use the same zip archive for a fresh install, upgrade from SMS or Nova 1, or updating Nova 2.</p>
 
 				<p class="alert alert-success">Nova 2.5+ requires PHP 5.3 or higher. Nova 2.3 will work on PHP 5.2. Nova 3 will require PHP 7 or higher.</p>
+
+				<p class="alert alert-warning">Nova 2.6 requires additional steps in order to work as intended. Please see the <a href="https://help.anodyne-productions.com/article/nova-2/updating-to-nova-26" target="_blank">Nova 2.6 Update Guide</a> for more information.</p>
 			</div>
 			<div class="col-md-5">
 				<div class="row">
