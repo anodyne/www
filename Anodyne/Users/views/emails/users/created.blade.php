@@ -7,7 +7,7 @@
 
 	<p>We have generated a random password for you to start. You should log in and change this password as soon as possible.</p>
 
-	<p>{{ HTML::link('http://anodyne-productions.com/login', 'Log In Now') }}</p>
+	<p>{{ HTML::link('https://anodyne-productions.com/login', 'Log In Now') }}</p>
 
 	<ul>
 		<li><strong>Email Address:</strong> {{ $email }}</li>

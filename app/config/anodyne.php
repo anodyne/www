@@ -13,9 +13,9 @@ return [
 
 	'links' => [
 
-		'forums'	=> 'http://forums.anodyne-productions.com/',
-		'help'		=> 'http://help.anodyne-productions.com/',
-		'xtras'		=> 'http://xtras.anodyne-productions.com/',
+		'forums'	=> 'https://forums.anodyne-productions.com/',
+		'help'		=> 'https://help.anodyne-productions.com/',
+		'xtras'		=> 'https://xtras.anodyne-productions.com/',
 
 	],
 

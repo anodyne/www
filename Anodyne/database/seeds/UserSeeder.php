@@ -14,11 +14,11 @@ class UserSeeder extends Seeder {
 				'name'		=> "Anodyne Productions",
 				'email'		=> "admin@anodyne-productions.com",
 				'password'	=> "password",
-				'url'		=> "http://anodyne-productions.com",
+				'url'		=> "https://anodyne-productions.com",
 				'username'	=> 'anodyne',
 				'access'	=> [1, 2, 3, 4, 5, 6, 7, 8],
 				'twitter'	=> '@anodyneprod',
-				'facebook'	=> 'http://www.facebook.com/anodyneproductions',
+				'facebook'	=> 'https://facebook.com/anodyneproductions',
 			]
 		];
 

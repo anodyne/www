@@ -18,7 +18,7 @@
 <div class="row">
 	<div class="col-md-4">
 		<h3>New Images</h3>
-		<p><a href="http://kuro-rpg.net" target="_blank">Kuro-RPG</a> has developed a whole new set of rank images made up of multiple images for Nova 3.</p>
+		<p><a href="https://kuro-rpg.net" target="_blank">Kuro-RPG</a> has developed a whole new set of rank images made up of multiple images for Nova 3.</p>
 	</div>
 	<div class="col-md-4">
 		<h3>Live Preview</h3>
@@ -53,23 +53,23 @@
 				<p>From the user perspective, we've greatly increased the flexibility of ranks. Previously, we provided only the rank colors that we felt were necessary, but nothing else. With the new system of ranks, we're able to provide significantly more colors and use only what we need. How many more? Nova 3's DS9 genre ships with 17 rank colors (17 cadet colors and the same 17 colors for standard duty uniforms as well). Then there are the pips themselves. Previously, they were tied to a single image, but now they're separate, so we don't just ship with the standard pips. No, now we ship with a much wider range for games that want to use other pips.</p>
 
 				<p>But we didn't stop there, we took the opportunity to overhaul ranks in Nova 3 to make everything easier. In Nova 3, ranks are made up of three distinct components now: a group, an info record, and a rank record.</p>
-				
+
 				<h3>Rank Groups</h3>
-				
+
 				<p>Rank groups replace the confusing class option. All the class really was was a way to organize ranks together, but when you put them in to a dropdown menu, there wasn't a good way to actually indicate there was a different (hence Nova's showing a preview of the rank image). Rank groups allow you to organize ranks in a meaningful way that makes it clear exactly what ranks belong where. For the DS9 genre, Nova comes with two groups for admiralty ranks (naval and marine), six groups for naval ranks (command, operations, sciences, aerospace operations, intelligence and diplomatic corps) and one group for marine ranks. When you see a rank dropdown in Nova 3, the ranks are displayed within those groups so it's clear what you're selecting.</p>
-				
+
 				<p>Managing rank groups is dead simple (including drag-and-drop reordering) and even provides killer duplicate functionality. Not sure why you'd want to duplicate a rank group? Take the example of wanting to create a new set of ranks for your Marine Black Ops department. Instead of using the traditional green Marine ranks, you want the Marine pips on a black collar. With the old way, you'd have to find those images and upload all them to each of the rank sets then create each rank separately. In Nova 3, simply click the duplicate button and you'll be prompted to provide a name (in this case Marine Black Ops) and a new base image. Hit Submit and Nova goes out, duplicates any ranks in the group you want to duplicate and changes the base collar. In a few clicks, you've managed to create an entirely new group of ranks that's available to use immediately.</p>
-				
+
 				<h3>Rank Info</h3>
-				
+
 				<p>There's certain rank information that almost never changes, and if it does change, it changes for a lot of ranks, not just one. With that in mind, we've moved the basic information about ranks into info records. An info record contains the rank's name (Captain), short name (CAPT) and order in relation to other ranks. (There's a group option, but that's done more for presentation reasons for managing info records.) That means that if you want to change Captain to Fleet Captain, you change it once and anything that uses that info record changes instead of having to change multiple versions of the same rank just with a different image.</p>
-				
+
 				<p>We've taken full advantage of this in Nova 3 to provide naval rank rates, marine rank rates and a new aerospace operations rank rates (Air Force enlisted ranks). Want to do something beyond that? Just add a new rank info record and it's available to use on your rank records immediately.</p>
-				
+
 				<h3>Ranks</h3>
-				
+
 				<p>The rank record pulls all the information together. Each rank has a group ID, an info ID, and information about the images to use. When you manage a rank record, you'll see an info dropdown, a group dropdown and tabs with base images and pip images. The base and pip images are pulled directly from the server, so you don't have to manage those images in another place; Nova just knows where to pull them from and shows you what's available. On top of that, we've created a live preview so when you select a new base or pip image, the preview changes to show you what your rank will look like.</p>
-				
+
 				<p>Managing ranks in Nova 3 is dead simple and provides the ultimate flexibility and ease of use. Bet you never thought you'd hear that about rank management, did you?</p>
 			</div>
 			<div class="modal-footer">

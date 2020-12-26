@@ -35,7 +35,7 @@
 					<ol>
 						<li>If you have Preview Release 1 or 2 installed, you will need to first uninstall it in order to do a fresh install of Preview Release 3</li>
 						<li>Upload Nova NextGen to your server (or if it's a local server, copy the files to the location where you want it)</li>
-						<li>Navigate to <code>http://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
+						<li>Navigate to <code>https://&lt;yoursite&gt;</code> and you'll be automatically redirected to the Setup Center</li>
 						<li>You may be prompted to make certain directories writable in order to continue. Laravel requires having the ability to create files for logging, caching, and other framework operations. You'll need to make the <code>config</code>, <code>storage</code>, and <code>nova/bootstrap/cache</code> directories (as well as all their sub-directories) writable by the web server (775).</li>
 						<li>Select the option to do a Fresh Install of Nova NextGen and follow the prompts</li>
 					</ol>
@@ -87,7 +87,7 @@
 
 					<h3>Where is <em>Feature X</em>?</h3>
 
-					<p>Nova NextGen is being developed in milestones. Instead of trying to tackle lots of things at once, we're biting off small chunks of functionality and working on the entire system piece-by-piece. If you don't see a feature in the preview releases, it's likely it's been slated for work in a future milestone. If you have specific questions about a feature, feel free to post on the <a href="http://forums.anodyne-productions.com">forums</a>.</p>
+					<p>Nova NextGen is being developed in milestones. Instead of trying to tackle lots of things at once, we're biting off small chunks of functionality and working on the entire system piece-by-piece. If you don't see a feature in the preview releases, it's likely it's been slated for work in a future milestone. If you have specific questions about a feature, feel free to post on the <a href="https://forums.anodyne-productions.com">forums</a>.</p>
 				</div>
 
 				<div id="vision" class="tab-pane">
